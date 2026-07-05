@@ -81,101 +81,102 @@
 </script>
 <!-- /skill:chrome -->
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#3f6fd0">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Aqlli kesuvchi">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%233f6fd0'/%3E%3Cg transform='translate(32 30)' fill='%23f2f6ff'%3E%3Ccircle r='13.5'/%3E%3C/g%3E%3Cg transform='translate(32 30)' fill='%233f6fd0'%3E%3Ccircle r='9.5'/%3E%3C/g%3E%3Cg transform='translate(32 30)' fill='%23f2f6ff'%3E%3Ccircle r='2.4'/%3E%3C/g%3E%3C/svg%3E">
 <title>Aqlli kesuvchi</title>
 <style>
 :root {
-  --bg: oklch(97% 0.008 75);
-  --surface: oklch(99% 0.005 75);
-  --surface-alt: oklch(94% 0.012 75);
-  --border: oklch(88% 0.015 75);
-  --border-strong: oklch(72% 0.02 75);
-  --text: oklch(22% 0.01 75);
-  --text-secondary: oklch(45% 0.015 75);
-  --primary: oklch(52% 0.15 250);
-  --primary-light: oklch(93% 0.04 250);
-  --primary-hover: oklch(46% 0.15 250);
-  --accent: oklch(70% 0.17 55);
-  --danger: oklch(55% 0.2 25);
-  --danger-light: oklch(92% 0.05 25);
-  --success: oklch(50% 0.14 145);
-  --success-light: oklch(92% 0.04 145);
-  --warning: oklch(70% 0.15 80);
-  --remnant: oklch(88% 0.015 75);
-  --remnant-text: oklch(45% 0.02 75);
-  --space-xs: 4px;
-  --space-sm: 8px;
-  --space-md: 16px;
-  --space-lg: 24px;
-  --space-xl: 32px;
-  --space-2xl: 48px;
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 14px;
-  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+--bg: oklch(97% 0.008 75);
+--surface: oklch(99% 0.005 75);
+--surface-alt: oklch(94% 0.012 75);
+--border: oklch(88% 0.015 75);
+--border-strong: oklch(72% 0.02 75);
+--text: oklch(22% 0.01 75);
+--text-secondary: oklch(45% 0.015 75);
+--primary: oklch(52% 0.15 250);
+--primary-light: oklch(93% 0.04 250);
+--primary-hover: oklch(46% 0.15 250);
+--accent: oklch(70% 0.17 55);
+--danger: oklch(55% 0.2 25);
+--danger-light: oklch(92% 0.05 25);
+--success: oklch(50% 0.14 145);
+--success-light: oklch(92% 0.04 145);
+--warning: oklch(70% 0.15 80);
+--warning-light: oklch(94% 0.05 80);
+--remnant: oklch(88% 0.015 75);
+--remnant-text: oklch(45% 0.02 75);
+--space-xs: 4px;
+--space-sm: 8px;
+--space-md: 16px;
+--space-lg: 24px;
+--space-xl: 32px;
+--space-2xl: 48px;
+--radius-sm: 6px;
+--radius-md: 10px;
+--radius-lg: 14px;
+--ease-out: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 [data-theme="dark"] {
-  --bg: oklch(16% 0.012 260);
-  --surface: oklch(21% 0.014 260);
-  --surface-alt: oklch(26% 0.016 260);
-  --border: oklch(32% 0.018 260);
-  --border-strong: oklch(45% 0.02 260);
-  --text: oklch(93% 0.01 260);
-  --text-secondary: oklch(70% 0.015 260);
-  --primary: oklch(70% 0.14 250);
-  --primary-light: oklch(30% 0.06 250);
-  --primary-hover: oklch(76% 0.14 250);
-  --accent: oklch(75% 0.16 55);
-  --danger: oklch(70% 0.17 25);
-  --danger-light: oklch(30% 0.08 25);
-  --success: oklch(70% 0.14 145);
-  --success-light: oklch(30% 0.06 145);
-  --warning: oklch(78% 0.14 80);
-  --remnant: oklch(30% 0.015 260);
-  --remnant-text: oklch(72% 0.015 260);
+--bg: oklch(16% 0.012 260);
+--surface: oklch(21% 0.014 260);
+--surface-alt: oklch(26% 0.016 260);
+--border: oklch(32% 0.018 260);
+--border-strong: oklch(45% 0.02 260);
+--text: oklch(93% 0.01 260);
+--text-secondary: oklch(70% 0.015 260);
+--primary: oklch(70% 0.14 250);
+--primary-light: oklch(30% 0.06 250);
+--primary-hover: oklch(76% 0.14 250);
+--accent: oklch(75% 0.16 55);
+--danger: oklch(70% 0.17 25);
+--danger-light: oklch(30% 0.08 25);
+--success: oklch(70% 0.14 145);
+--success-light: oklch(30% 0.06 145);
+--warning: oklch(78% 0.14 80);
+--warning-light: oklch(32% 0.06 80);
+--remnant: oklch(30% 0.015 260);
+--remnant-text: oklch(72% 0.015 260);
 }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.5;
-  font-size: 15px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-optical-sizing: auto;
-  transition: background 0.3s var(--ease-out), color 0.3s var(--ease-out);
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+background: var(--bg); color: var(--text); line-height: 1.5; font-size: 15px;
+min-height: 100vh; display: flex; flex-direction: column; font-optical-sizing: auto;
+transition: background 0.3s var(--ease-out), color 0.3s var(--ease-out);
+-webkit-tap-highlight-color: transparent;
+padding-top: env(safe-area-inset-top); padding-bottom: env(safe-area-inset-bottom);
 }
 
 @media print {
-  body { background: white !important; color: black !important; }
-  .no-print { display: none !important; }
-  .print-only { display: block !important; }
-  .sheet-visual { break-inside: avoid; page-break-inside: avoid; margin-bottom: 16px; border: 1px solid #ccc !important; box-shadow: none !important; }
-  main { padding: 0 !important; }
-  .stats-bar { break-inside: avoid; }
-  @page { margin: 12mm; }
+* { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+body { background: white !important; color: black !important; }
+.no-print { display: none !important; }
+.print-only { display: block !important; }
+header, footer, .settings-panel, .input-section, .empty-state, .toast, .modal-backdrop { display: none !important; }
+main { padding: 0 !important; margin: 0 !important; max-width: none !important; }
+.results-container { margin-top: 0 !important; }
+.results-header { margin-bottom: 12px !important; }
+.order-banner { display: flex !important; }
+.stats-bar, .fin-report { break-inside: avoid; page-break-inside: avoid; }
+.stat-card { border: 1px solid #bbb !important; }
+.sheet-visual { break-inside: avoid; page-break-inside: avoid; margin-bottom: 12px; border: 1px solid #bbb !important; box-shadow: none !important; }
+.sheet-canvas-wrap { border: 1px solid #999 !important; }
+.fin-report, .fin-table-wrap { border: 1px solid #bbb !important; }
+@page { margin: 12mm; }
 }
 
 .print-only { display: none; }
 
-header {
-  background: var(--surface);
-  border-bottom: 1px solid var(--border);
-  padding: var(--space-md) var(--space-xl);
-  position: sticky;
-  top: 0;
-  z-index: 20;
-}
-.header-inner {
-  max-width: 1400px; margin: 0 auto;
-  display: flex; align-items: center; justify-content: space-between;
-  gap: var(--space-md); flex-wrap: wrap;
-}
+header { background: var(--surface); border-bottom: 1px solid var(--border); padding: var(--space-md) var(--space-xl); position: sticky; top: 0; z-index: 20; }
+.header-inner { max-width: 1400px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: var(--space-md); flex-wrap: wrap; }
 .logo { display: flex; align-items: center; gap: var(--space-md); }
 .logo-mark { width: 48px; height: 48px; flex-shrink: 0; }
 .logo-text-wrap { display: flex; flex-direction: column; }
@@ -183,89 +184,102 @@ header {
 .logo-sub { font-size: 0.72rem; color: var(--text-secondary); font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; }
 .header-right { display: flex; align-items: center; gap: var(--space-md); }
 
-.clock {
-  display: flex; align-items: center; gap: 3px;
-  background: oklch(20% 0.02 260); padding: 8px 12px;
-  border-radius: var(--radius-md); border: 1px solid oklch(35% 0.03 260);
-  box-shadow: inset 0 1px 4px oklch(0% 0 0 / 0.3);
-}
-.clock-seg {
-  font-family: "SF Mono", "Consolas", ui-monospace, monospace;
-  font-size: 1.15rem; font-weight: 700; color: oklch(85% 0.14 145);
-  font-variant-numeric: tabular-nums; letter-spacing: 0.04em;
-  min-width: 1.6ch; text-align: center; text-shadow: 0 0 8px oklch(75% 0.14 145 / 0.5);
-}
+.clock { display: flex; align-items: center; gap: 3px; background: oklch(20% 0.02 260); padding: 8px 12px; border-radius: var(--radius-md); border: 1px solid oklch(35% 0.03 260); box-shadow: inset 0 1px 4px oklch(0% 0 0 / 0.3); }
+.clock-seg { font-family: "SF Mono", "Consolas", ui-monospace, monospace; font-size: 1.15rem; font-weight: 700; color: oklch(85% 0.14 145); font-variant-numeric: tabular-nums; letter-spacing: 0.04em; min-width: 1.6ch; text-align: center; text-shadow: 0 0 8px oklch(75% 0.14 145 / 0.5); }
 .clock-colon { color: oklch(70% 0.1 145); font-weight: 700; animation: blink 1s steps(2, start) infinite; }
 @keyframes blink { to { opacity: 0.3; } }
 .clock-tz { font-size: 0.6rem; color: oklch(65% 0.05 145); text-transform: uppercase; letter-spacing: 0.1em; margin-left: 6px; font-weight: 600; }
 
-.icon-btn {
-  width: 40px; height: 40px; border: 1px solid var(--border);
-  background: var(--surface-alt); border-radius: var(--radius-sm); cursor: pointer;
-  display: flex; align-items: center; justify-content: center; color: var(--text);
-  transition: all 0.15s var(--ease-out);
-}
+.icon-btn { width: 40px; height: 40px; border: 1px solid var(--border); background: var(--surface-alt); border-radius: var(--radius-sm); cursor: pointer; display: flex; align-items: center; justify-content: center; color: var(--text); transition: all 0.15s var(--ease-out); position: relative; }
 .icon-btn:hover { background: var(--border); }
 .icon-btn svg { width: 18px; height: 18px; }
+.icon-btn .badge { position: absolute; top: -6px; right: -6px; min-width: 17px; height: 17px; padding: 0 4px; background: var(--primary); color: white; border-radius: 9px; font-size: 0.64rem; font-weight: 700; display: flex; align-items: center; justify-content: center; border: 2px solid var(--surface); }
+
+#installBtn { display: none; align-items: center; gap: 6px; }
 
 main { max-width: 1400px; margin: 0 auto; padding: var(--space-xl); width: 100%; flex: 1; }
 
-.settings-panel {
-  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg);
-  margin-bottom: var(--space-lg); overflow: hidden; max-height: 0; opacity: 0;
-  transition: max-height 0.35s var(--ease-out), opacity 0.25s var(--ease-out), margin 0.3s var(--ease-out); margin-top: 0;
-}
-.settings-panel.open { max-height: 520px; opacity: 1; margin-bottom: var(--space-lg); }
+.settings-panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); margin-bottom: var(--space-lg); overflow: hidden; max-height: 0; opacity: 0; transition: max-height 0.35s var(--ease-out), opacity 0.25s var(--ease-out), margin 0.3s var(--ease-out); margin-top: 0; }
+.settings-panel.open { max-height: 900px; opacity: 1; margin-bottom: var(--space-lg); }
 .settings-inner { padding: var(--space-lg); }
 .settings-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: var(--space-lg); }
 .settings-footer { margin-top: var(--space-lg); padding-top: var(--space-lg); border-top: 1px solid var(--border); display: flex; justify-content: flex-end; }
+
+.contact-block { margin-top: var(--space-lg); padding-top: var(--space-lg); border-top: 1px solid var(--border); }
+.contact-title { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); margin-bottom: var(--space-md); }
+.contact-author { font-size: 0.95rem; font-weight: 700; margin-bottom: var(--space-md); }
+.contact-author span { color: var(--primary); }
+.contact-phones { display: flex; flex-wrap: wrap; gap: var(--space-sm); }
+.contact-phone { display: inline-flex; align-items: center; gap: 8px; text-decoration: none; background: var(--surface-alt); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 9px 14px; color: var(--text); font-weight: 600; font-size: 0.9rem; font-variant-numeric: tabular-nums; transition: all 0.15s var(--ease-out); }
+.contact-phone:hover { border-color: var(--primary); background: var(--primary-light); color: var(--primary); }
+.contact-phone svg { width: 16px; height: 16px; color: var(--success); flex-shrink: 0; }
 
 .setting-group { display: flex; flex-direction: column; gap: var(--space-sm); }
 .setting-group > label { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); }
 
 .seg { display: flex; background: var(--surface-alt); border-radius: var(--radius-sm); padding: 3px; gap: 3px; }
-.seg button {
-  flex: 1; padding: 8px 6px; border: none; background: transparent;
-  border-radius: calc(var(--radius-sm) - 2px); font-size: 0.82rem; font-weight: 600;
-  font-family: inherit; color: var(--text-secondary); cursor: pointer;
-  transition: all 0.15s var(--ease-out); display: flex; align-items: center; justify-content: center; gap: 5px;
-}
+.seg button { flex: 1; padding: 8px 6px; border: none; background: transparent; border-radius: calc(var(--radius-sm) - 2px); font-size: 0.82rem; font-weight: 600; font-family: inherit; color: var(--text-secondary); cursor: pointer; transition: all 0.15s var(--ease-out); display: flex; align-items: center; justify-content: center; gap: 5px; }
 .seg button svg { width: 14px; height: 14px; }
 .seg button.active { background: var(--surface); color: var(--primary); box-shadow: 0 1px 3px oklch(0% 0 0 / 0.12); }
+.lang-btn { gap: 7px !important; }
+.flag { width: 22px; height: 15px; border-radius: 2px; flex-shrink: 0; display: block; box-shadow: 0 0 0 1px oklch(0% 0 0 / 0.1); }
+.lang-code { font-size: 0.82rem; font-weight: 700; }
 
 .input-section { display: grid; grid-template-columns: 360px 1fr; gap: var(--space-xl); margin-bottom: var(--space-2xl); }
 @media (max-width: 940px) { .input-section { grid-template-columns: 1fr; } }
 .panel { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--space-lg); }
 .panel-title { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-secondary); margin-bottom: var(--space-md); }
 
+.material-block { margin-bottom: var(--space-md); padding-bottom: var(--space-md); border-bottom: 1px solid var(--border); }
+.material-head { display: flex; align-items: center; justify-content: space-between; gap: var(--space-sm); margin-bottom: var(--space-sm); }
+.material-head .panel-title { margin: 0; }
+.material-dropdown { position: relative; }
+.material-current { display: flex; align-items: center; gap: var(--space-sm); width: 100%; background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 10px 12px; cursor: pointer; transition: border-color 0.15s var(--ease-out); text-align: left; font-family: inherit; color: var(--text); }
+.material-current:hover { border-color: var(--border-strong); }
+.material-current.open { border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-light); }
+.material-current .mc-num { flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%; background: var(--primary); color: white; display: flex; align-items: center; justify-content: center; font-size: 0.78rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.material-current .mc-info { flex: 1; min-width: 0; }
+.material-current .mc-name { font-weight: 600; font-size: 0.9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.material-current .mc-meta { font-size: 0.72rem; color: var(--text-secondary); font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 1px; }
+.material-current .mc-placeholder { color: var(--text-secondary); font-size: 0.9rem; }
+.material-current .mc-chevron { flex-shrink: 0; width: 18px; height: 18px; color: var(--text-secondary); transition: transform 0.25s var(--ease-out); }
+.material-current.open .mc-chevron { transform: rotate(180deg); }
+.material-menu { position: absolute; top: calc(100% + 6px); left: 0; right: 0; z-index: 30; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); box-shadow: 0 10px 30px oklch(20% 0.02 260 / 0.18); padding: 6px; display: none; max-height: 300px; overflow-y: auto; }
+.material-menu.open { display: block; }
+.material-list { list-style: none; display: flex; flex-direction: column; gap: 4px; margin: 0; padding: 0; }
+.material-item { display: flex; align-items: center; gap: var(--space-sm); background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 8px 8px 8px 10px; cursor: pointer; transition: border-color 0.15s var(--ease-out), background 0.15s var(--ease-out); }
+.material-item:hover { border-color: var(--border-strong); background: var(--surface-alt); }
+.material-item.active { border-color: var(--primary); background: var(--primary-light); }
+.material-num { flex-shrink: 0; width: 22px; height: 22px; border-radius: 50%; background: var(--surface-alt); color: var(--text-secondary); display: flex; align-items: center; justify-content: center; font-size: 0.74rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.material-item.active .material-num { background: var(--primary); color: white; }
+.material-info { flex: 1; min-width: 0; }
+.material-name { font-weight: 600; font-size: 0.86rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.material-meta { font-size: 0.7rem; color: var(--text-secondary); font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 1px; }
+.material-del { flex-shrink: 0; width: 28px; height: 28px; border: none; background: transparent; color: var(--text-secondary); cursor: pointer; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; transition: all 0.15s var(--ease-out); }
+.material-del:hover { background: var(--danger-light); color: var(--danger); }
+.material-del svg { width: 15px; height: 15px; }
+.material-empty { font-size: 0.8rem; color: var(--text-secondary); padding: 12px 8px; text-align: center; }
+
 .sheet-inputs { display: flex; flex-direction: column; gap: var(--space-md); }
 .input-row { display: flex; gap: var(--space-sm); align-items: end; }
 .input-group { flex: 1; display: flex; flex-direction: column; gap: var(--space-xs); }
 .input-group label { font-size: 0.78rem; font-weight: 500; color: var(--text-secondary); }
-.input-group input, .input-group select {
-  width: 100%; padding: var(--space-sm) var(--space-md); border: 1px solid var(--border);
-  border-radius: var(--radius-sm); font-size: 0.9rem; font-family: inherit;
-  background: var(--bg); color: var(--text); transition: border-color 0.15s var(--ease-out);
-}
+.input-group input, .input-group select { width: 100%; padding: var(--space-sm) var(--space-md); border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 0.9rem; font-family: inherit; background: var(--bg); color: var(--text); transition: border-color 0.15s var(--ease-out); }
 .input-group input:focus, .input-group select:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px var(--primary-light); }
+.money-input { font-variant-numeric: tabular-nums; letter-spacing: 0.03em; }
+
+.unit-cost-box { display: none; margin-top: 2px; font-size: 0.82rem; font-weight: 600; color: var(--primary); background: var(--primary-light); border: 1px solid var(--primary); border-radius: var(--radius-sm); padding: 7px 11px; font-variant-numeric: tabular-nums; }
+.unit-cost-box span { color: var(--text-secondary); font-weight: 500; }
 
 .divider-block { margin-top: var(--space-sm); padding-top: var(--space-md); border-top: 1px solid var(--border); display: flex; flex-direction: column; gap: var(--space-md); }
 .hint { font-size: 0.72rem; color: var(--text-secondary); }
 
 .pieces-table-wrap { overflow-x: auto; }
 table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
-thead th {
-  font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em;
-  color: var(--text-secondary); padding: var(--space-sm) var(--space-md); text-align: left;
-  border-bottom: 2px solid var(--border); white-space: nowrap;
-}
+thead th { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); padding: var(--space-sm) var(--space-md); text-align: left; border-bottom: 2px solid var(--border); white-space: nowrap; }
 tbody td { padding: var(--space-xs) var(--space-sm); border-bottom: 1px solid var(--border); vertical-align: middle; }
 tbody tr:last-child td { border-bottom: none; }
-tbody input[type=text], tbody input[type=number] {
-  width: 100%; min-width: 60px; padding: 6px 10px; border: 1px solid var(--border);
-  border-radius: var(--radius-sm); font-size: 0.88rem; font-family: inherit;
-  background: var(--bg); color: var(--text); transition: border-color 0.15s var(--ease-out);
-}
+tbody input[type=text], tbody input[type=number] { width: 100%; min-width: 60px; padding: 6px 10px; border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 0.88rem; font-family: inherit; background: var(--bg); color: var(--text); transition: border-color 0.15s var(--ease-out); }
 tbody input[type=text]:focus, tbody input[type=number]:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 2px var(--primary-light); }
 
 .color-picker { position: relative; width: 32px; height: 32px; border-radius: var(--radius-sm); border: 2px solid var(--border); cursor: pointer; overflow: hidden; transition: transform 0.15s var(--ease-out), border-color 0.15s var(--ease-out); }
@@ -280,16 +294,23 @@ tbody input[type=text]:focus, tbody input[type=number]:focus { outline: none; bo
 .btn-secondary:hover { background: var(--border); }
 .btn-success { background: var(--success); color: white; }
 .btn-success:hover { filter: brightness(0.93); transform: translateY(-1px); }
+.btn-danger { background: var(--danger-light); color: var(--danger); border: 1px solid transparent; }
+.btn-danger:hover { filter: brightness(0.96); }
 .btn-sm { padding: 5px 10px; font-size: 0.78rem; }
 .btn-lg { padding: 12px 24px; font-size: 0.95rem; }
 
-.table-actions { display: flex; gap: var(--space-sm); margin-top: var(--space-md); }
+.table-actions { display: flex; gap: var(--space-sm); margin-top: var(--space-md); flex-wrap: wrap; }
 .delete-row { width: 28px; height: 28px; border: none; background: transparent; color: var(--text-secondary); cursor: pointer; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; transition: all 0.15s var(--ease-out); }
 .delete-row:hover { background: var(--danger-light); color: var(--danger); }
 
 .calculate-section { display: flex; align-items: center; gap: var(--space-md); margin-top: var(--space-lg); padding-top: var(--space-lg); border-top: 1px solid var(--border); flex-wrap: wrap; }
 
 .results-container { margin-top: var(--space-2xl); }
+/* Arxivdan yuklangan buyurtma banneri */
+.order-banner { display: none; align-items: center; gap: var(--space-sm); background: var(--primary-light); border: 1px solid var(--primary); border-radius: var(--radius-md); padding: 12px var(--space-lg); margin-bottom: var(--space-lg); }
+.order-banner svg { width: 20px; height: 20px; color: var(--primary); flex-shrink: 0; }
+.order-banner .ob-text { font-size: 1.15rem; font-weight: 800; color: var(--primary); letter-spacing: -0.01em; }
+.order-banner .ob-date { font-size: 0.78rem; color: var(--text-secondary); font-variant-numeric: tabular-nums; margin-left: auto; }
 .results-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-lg); flex-wrap: wrap; gap: var(--space-md); }
 .results-title { font-size: 1.3rem; font-weight: 700; letter-spacing: -0.02em; }
 .stats-bar { display: flex; gap: var(--space-lg); flex-wrap: wrap; margin-bottom: var(--space-xl); }
@@ -302,6 +323,31 @@ tbody input[type=text]:focus, tbody input[type=number]:focus { outline: none; bo
 .stat-card.efficiency .stat-value { color: var(--success); }
 .stat-card.waste { border-color: var(--warning); }
 .stat-card.waste .stat-value { color: oklch(58% 0.15 80); }
+
+.fin-report { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--space-lg); margin-bottom: var(--space-xl); }
+.fin-head { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-md); margin-bottom: var(--space-md); flex-wrap: wrap; }
+.fin-title { font-size: 1.05rem; font-weight: 700; letter-spacing: -0.01em; }
+.fin-sub { font-size: 0.78rem; color: var(--text-secondary); font-variant-numeric: tabular-nums; }
+.fin-rows { display: grid; gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: var(--radius-md); overflow: hidden; }
+.fin-row { display: flex; justify-content: space-between; align-items: center; gap: var(--space-md); padding: 11px var(--space-md); background: var(--surface); }
+.fin-row .lbl { color: var(--text-secondary); font-size: 0.9rem; }
+.fin-row .lbl small { display: block; font-size: 0.72rem; opacity: 0.8; }
+.fin-row .val { font-weight: 700; font-size: 1rem; font-variant-numeric: tabular-nums; white-space: nowrap; letter-spacing: 0.02em; }
+.fin-row.total { background: var(--surface-alt); }
+.fin-row.waste .val { color: oklch(58% 0.15 80); }
+.fin-row.profit { background: var(--success-light); }
+.fin-row.profit .val { color: var(--success); }
+.fin-row.grand { background: var(--primary-light); }
+.fin-row.grand .val { color: var(--primary); font-size: 1.1rem; }
+
+.fin-subtitle { margin: 20px 0 8px; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-secondary); }
+.fin-table-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius-md); }
+.fin-table { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.fin-table th { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.04em; color: var(--text-secondary); padding: 9px 11px; text-align: right; border-bottom: 1px solid var(--border); background: var(--surface-alt); white-space: nowrap; }
+.fin-table th:first-child, .fin-table td:first-child { text-align: left; }
+.fin-table td { padding: 9px 11px; border-bottom: 1px solid var(--border); font-size: 0.86rem; text-align: right; white-space: nowrap; letter-spacing: 0.02em; }
+.fin-table tbody tr:last-child td { border-bottom: none; }
+.fin-table tr.tot td { font-weight: 700; background: var(--surface-alt); }
 
 .sheets-grid { display: grid; gap: var(--space-xl); }
 .sheet-visual { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: var(--space-lg); }
@@ -323,8 +369,40 @@ tbody input[type=text]:focus, tbody input[type=number]:focus { outline: none; bo
 .error-msg { background: var(--danger-light); color: var(--danger); padding: var(--space-sm) var(--space-md); border-radius: var(--radius-sm); font-size: 0.85rem; font-weight: 500; margin-top: var(--space-sm); display: none; }
 .error-msg.show { display: block; }
 
-.toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(120%); background: var(--success); color: white; padding: 12px 22px; border-radius: var(--radius-md); font-weight: 600; font-size: 0.9rem; box-shadow: 0 8px 24px oklch(0% 0 0 / 0.25); z-index: 50; transition: transform 0.4s var(--ease-out); display: flex; align-items: center; gap: 8px; }
+.toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%) translateY(120%); background: var(--success); color: white; padding: 12px 22px; border-radius: var(--radius-md); font-weight: 600; font-size: 0.9rem; box-shadow: 0 8px 24px oklch(0% 0 0 / 0.25); z-index: 70; transition: transform 0.4s var(--ease-out); display: flex; align-items: center; gap: 8px; max-width: 90vw; }
 .toast.show { transform: translateX(-50%) translateY(0); }
+.toast.warn { background: oklch(58% 0.15 80); }
+
+.modal-backdrop { position: fixed; inset: 0; background: oklch(20% 0.02 260 / 0.5); z-index: 40; display: none; align-items: center; justify-content: center; padding: var(--space-md); opacity: 0; transition: opacity 0.2s var(--ease-out); }
+.modal-backdrop.open { display: flex; opacity: 1; }
+.modal { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); width: 100%; max-width: 480px; padding: var(--space-lg); transform: translateY(8px); transition: transform 0.25s var(--ease-out); max-height: 85vh; display: flex; flex-direction: column; }
+.modal-backdrop.open .modal { transform: translateY(0); }
+.modal h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: var(--space-md); display: flex; align-items: center; gap: 8px; }
+.modal .input-group { margin-bottom: var(--space-md); }
+.modal-actions { display: flex; justify-content: flex-end; gap: var(--space-sm); margin-top: var(--space-lg); flex-wrap: wrap; }
+.modal-snapshot { font-size: 0.78rem; color: var(--text-secondary); background: var(--surface-alt); border-radius: var(--radius-sm); padding: var(--space-sm) var(--space-md); font-variant-numeric: tabular-nums; }
+.modal-warn { display: none; background: var(--warning-light); color: oklch(45% 0.13 60); border: 1px solid var(--warning); border-radius: var(--radius-sm); padding: 9px 12px; font-size: 0.82rem; font-weight: 500; margin-top: var(--space-sm); }
+.modal-warn.show { display: block; }
+
+.archive-toolbar { display: flex; align-items: center; justify-content: space-between; gap: var(--space-sm); margin-bottom: var(--space-md); }
+.archive-count { font-size: 0.8rem; color: var(--text-secondary); font-variant-numeric: tabular-nums; }
+.archive-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; overflow-y: auto; }
+.archive-item { display: flex; align-items: center; gap: var(--space-sm); background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-md); padding: 10px 8px 10px 12px; transition: border-color 0.15s var(--ease-out), background 0.15s var(--ease-out); }
+.archive-item.clickable { cursor: pointer; }
+.archive-item.clickable:hover { border-color: var(--primary); background: var(--primary-light); }
+.archive-num { flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%; background: var(--surface-alt); color: var(--text-secondary); display: flex; align-items: center; justify-content: center; font-size: 0.78rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.archive-info { flex: 1; min-width: 0; }
+.archive-name { font-weight: 700; font-size: 0.92rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.archive-meta { font-size: 0.72rem; color: var(--text-secondary); font-variant-numeric: tabular-nums; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-top: 2px; }
+.archive-edit-input { width: 100%; padding: 6px 9px; border: 1px solid var(--primary); border-radius: var(--radius-sm); font-size: 0.9rem; font-family: inherit; background: var(--bg); color: var(--text); box-shadow: 0 0 0 2px var(--primary-light); }
+.archive-actions { display: flex; gap: 2px; flex-shrink: 0; }
+.archive-act { width: 30px; height: 30px; border: none; background: transparent; color: var(--text-secondary); cursor: pointer; border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; transition: all 0.15s var(--ease-out); }
+.archive-act:hover { background: var(--surface-alt); color: var(--text); }
+.archive-act.del:hover { background: var(--danger-light); color: var(--danger); }
+.archive-act.save:hover { background: var(--success-light); color: var(--success); }
+.archive-act svg { width: 16px; height: 16px; }
+.archive-empty { text-align: center; padding: var(--space-xl) var(--space-md); color: var(--text-secondary); font-size: 0.9rem; }
+.archive-empty svg { width: 48px; height: 48px; opacity: 0.35; margin-bottom: 10px; }
 
 footer { background: var(--surface); border-top: 1px solid var(--border); padding: var(--space-lg) var(--space-xl); margin-top: var(--space-2xl); }
 .footer-inner { max-width: 1400px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: var(--space-md); flex-wrap: wrap; }
@@ -332,628 +410,968 @@ footer { background: var(--surface); border-top: 1px solid var(--border); paddin
 .footer-author span { color: var(--primary); }
 .footer-version { font-size: 0.72rem; color: var(--text-secondary); letter-spacing: 0.03em; }
 
+.print-header { padding: 4px 0 12px; border-bottom: 2px solid #333; margin-bottom: 16px; }
+.print-header h1 { font-size: 1.4rem; margin-bottom: 4px; }
+.print-header p { font-size: 0.85rem; color: #555; }
+
 @media (max-width: 640px) {
-  main { padding: var(--space-md); }
-  header { padding: var(--space-md); }
-  .stats-bar { flex-direction: column; }
-  .stat-card { min-width: unset; width: 100%; }
-  .clock-seg { font-size: 1rem; }
+main { padding: var(--space-md); }
+header { padding: var(--space-md); }
+.stats-bar { flex-direction: column; }
+.stat-card { min-width: unset; width: 100%; }
+.clock-seg { font-size: 1rem; }
+.btn-lg { width: 100%; justify-content: center; }
+.fin-row .val { font-size: 0.92rem; }
+.fin-table th, .fin-table td { padding: 7px 8px; font-size: 0.78rem; }
+.contact-phone { flex: 1; justify-content: center; }
+.order-banner .ob-date { display: none; }
 }
 </style>
 </head>
 <body>
 
 <header class="no-print">
-  <div class="header-inner">
-    <div class="logo">
-      <svg class="logo-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-        <defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="oklch(58% 0.16 250)"/><stop offset="1" stop-color="oklch(52% 0.15 265)"/></linearGradient></defs>
-        <rect x="4" y="4" width="56" height="56" rx="14" fill="url(#lg)"/>
-        <g transform="translate(32 30)">
-          <g fill="oklch(97% 0.02 250)"><circle r="13.5"/></g>
-          <g fill="url(#lg)"><circle r="9.5"/></g>
-          <g fill="oklch(97% 0.02 250)"><circle r="2.4"/></g>
-          <g fill="oklch(97% 0.02 250)">
-            <g id="tooth"><polygon points="0,-16 2.4,-13 -2.4,-13"/></g>
-            <use href="#tooth" transform="rotate(45)"/><use href="#tooth" transform="rotate(90)"/>
-            <use href="#tooth" transform="rotate(135)"/><use href="#tooth" transform="rotate(180)"/>
-            <use href="#tooth" transform="rotate(225)"/><use href="#tooth" transform="rotate(270)"/>
-            <use href="#tooth" transform="rotate(315)"/>
-          </g>
-        </g>
-        <g transform="translate(46 16)"><path d="M0,-6 L1.6,-1.6 L6,0 L1.6,1.6 L0,6 L-1.6,1.6 L-6,0 L-1.6,-1.6 Z" fill="oklch(80% 0.16 90)"/></g>
-      </svg>
-      <div class="logo-text-wrap">
-        <div class="logo-text" id="appName">Aqlli kesuvchi</div>
-        <div class="logo-sub" id="appTagline">DSP · Laminat · Profil · Oyna</div>
-      </div>
-    </div>
-    <div class="header-right">
-      <div class="clock" title="Toshkent vaqti">
-        <span class="clock-seg" id="clkH">00</span><span class="clock-colon">:</span>
-        <span class="clock-seg" id="clkM">00</span><span class="clock-colon">:</span>
-        <span class="clock-seg" id="clkS">00</span><span class="clock-tz">TAS</span>
-      </div>
-      <button class="icon-btn" id="settingsBtn" title="Sozlamalar" onclick="toggleSettings()">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
-      </button>
-    </div>
-  </div>
+<div class="header-inner">
+<div class="logo">
+<svg class="logo-mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+<defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="oklch(58% 0.16 250)"/><stop offset="1" stop-color="oklch(52% 0.15 265)"/></linearGradient></defs>
+<rect x="4" y="4" width="56" height="56" rx="14" fill="url(#lg)"/>
+<g transform="translate(32 30)">
+<g fill="oklch(97% 0.02 250)"><circle r="13.5"/></g>
+<g fill="url(#lg)"><circle r="9.5"/></g>
+<g fill="oklch(97% 0.02 250)"><circle r="2.4"/></g>
+<g fill="oklch(97% 0.02 250)">
+<g id="tooth"><polygon points="0,-16 2.4,-13 -2.4,-13"/></g>
+<use href="#tooth" transform="rotate(45)"/><use href="#tooth" transform="rotate(90)"/>
+<use href="#tooth" transform="rotate(135)"/><use href="#tooth" transform="rotate(180)"/>
+<use href="#tooth" transform="rotate(225)"/><use href="#tooth" transform="rotate(270)"/>
+<use href="#tooth" transform="rotate(315)"/>
+</g>
+</g>
+<g transform="translate(46 16)"><path d="M0,-6 L1.6,-1.6 L6,0 L1.6,1.6 L0,6 L-1.6,1.6 L-6,0 L-1.6,-1.6 Z" fill="oklch(80% 0.16 90)"/></g>
+</svg>
+<div class="logo-text-wrap">
+<div class="logo-text" id="appName">Aqlli kesuvchi</div>
+<div class="logo-sub" id="appTagline">DSP · Laminat · Profil · Oyna</div>
+</div>
+</div>
+<div class="header-right">
+<button class="btn btn-primary btn-sm" id="installBtn" onclick="installApp()">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5M12 15V3"/></svg>
+<span id="btnInstall">O'rnatish</span>
+</button>
+<div class="clock" title="Toshkent vaqti">
+<span class="clock-seg" id="clkH">00</span><span class="clock-colon">:</span>
+<span class="clock-seg" id="clkM">00</span><span class="clock-colon">:</span>
+<span class="clock-seg" id="clkS">00</span><span class="clock-tz">TAS</span>
+</div>
+<button class="icon-btn" id="archiveBtn" title="Arxiv" onclick="openArchive()">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 8v13H3V8"/><path d="M1 3h22v5H1z"/><path d="M10 12h4"/></svg>
+<span class="badge" id="archiveBadge" style="display:none">0</span>
+</button>
+<button class="icon-btn" id="settingsBtn" title="Sozlamalar" onclick="toggleSettings()">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+</button>
+</div>
+</div>
 </header>
 
-<div class="print-only" style="padding:16px;text-align:center;border-bottom:2px solid #333;margin-bottom:16px;">
-  <h1 style="font-size:1.4rem;margin-bottom:4px;">Aqlli kesuvchi — Kesish andozasi</h1>
-  <p style="font-size:0.85rem;color:#555;" id="printMeta"></p>
+<div class="print-only print-header">
+<h1 id="printTitle">Aqlli kesuvchi — Kesish andozasi</h1>
+<p id="printMeta"></p>
 </div>
 
 <main>
-  <div class="settings-panel no-print" id="settingsPanel">
-    <div class="settings-inner">
-      <div class="settings-grid">
-        <div class="setting-group">
-          <label id="lblUnit">O'lchov birligi</label>
-          <div class="seg" id="unitSeg">
-            <button data-unit="m" onclick="setUnit(this)">Metr</button>
-            <button data-unit="cm" class="active" onclick="setUnit(this)">Santimetr</button>
-            <button data-unit="mm" onclick="setUnit(this)">Millimetr</button>
-          </div>
-        </div>
-        <div class="setting-group">
-          <label id="lblLang">Til</label>
-          <div class="seg" id="langSeg">
-            <button data-lang="uz" class="active" onclick="setLang(this)">O'zbekcha</button>
-            <button data-lang="ru" onclick="setLang(this)">Русский</button>
-          </div>
-        </div>
-        <div class="setting-group">
-          <label id="lblTheme">Mavzu</label>
-          <div class="seg" id="themeSeg">
-            <button data-theme="light" class="active" onclick="setTheme(this)">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
-              <span id="themeLight">Kun</span>
-            </button>
-            <button data-theme="dark" onclick="setTheme(this)">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-              <span id="themeDark">Tun</span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="settings-footer">
-        <button class="btn btn-primary" onclick="saveSettings()">
-          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg>
-          <span id="btnSaveSettings">Saqlash</span>
-        </button>
-      </div>
-    </div>
-  </div>
-
-  <section class="input-section no-print">
-    <div class="panel">
-      <div class="panel-title" id="lblSheetSettings">List sozlamalari</div>
-      <div class="sheet-inputs">
-        <div class="input-row">
-          <div class="input-group">
-            <label><span id="lblWidth">Eni</span> (<span class="unit-lbl">sm</span>)</label>
-            <input type="number" id="sheetWidth" value="275" min="0.1" step="0.1">
-          </div>
-          <div class="input-group">
-            <label><span id="lblHeight">Bo'yi</span> (<span class="unit-lbl">sm</span>)</label>
-            <input type="number" id="sheetHeight" value="183" min="0.1" step="0.1">
-          </div>
-        </div>
-        <div class="divider-block">
-          <div class="input-group">
-            <label id="lblKerf">Arra haqqi (mm) — ixtiyoriy</label>
-            <input type="number" id="kerf" value="4" min="0" max="100" step="0.5" placeholder="0">
-            <span class="hint" id="hintKerf">Har doim millimetrda. Oyna uchun 0. DSP/LDSP uchun 1-100 mm.</span>
-          </div>
-          <div class="setting-group">
-            <label id="lblCutDir">Kesish yo'nalishi</label>
-            <div class="seg" id="cutSeg">
-              <button data-dir="auto" class="active" onclick="setCutDir(this)">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg>
-                <span id="dirAuto">Avto</span>
-              </button>
-              <button data-dir="horizontal" onclick="setCutDir(this)">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20"/><path d="M2 6h20M2 18h20" opacity="0.4"/></svg>
-                <span id="dirHor">Gorizontal</span>
-              </button>
-              <button data-dir="vertical" onclick="setCutDir(this)">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"/><path d="M6 2v20M18 2v20" opacity="0.4"/></svg>
-                <span id="dirVer">Vertikal</span>
-              </button>
-            </div>
-            <span class="hint" id="hintAuto">Avto — dastur eng kam chiqimli usulni o'zi tanlaydi.</span>
-          </div>
-          <div class="input-group">
-            <label style="display:flex;align-items:center;gap:8px;cursor:pointer;">
-              <input type="checkbox" id="allowRotate" checked style="width:auto;">
-              <span id="lblRotate">Bo'laklarni 90° aylantirish mumkin</span>
-            </label>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel">
-      <div class="panel-title" id="lblPieces">Kerakli bo'laklar</div>
-      <div class="pieces-table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th id="thName">Nomi</th>
-              <th><span id="thW">Eni</span> (<span class="unit-lbl">sm</span>)</th>
-              <th><span id="thH">Bo'yi</span> (<span class="unit-lbl">sm</span>)</th>
-              <th id="thQty">Soni</th>
-              <th id="thColor">Rang</th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody id="piecesBody"></tbody>
-        </table>
-      </div>
-      <div class="table-actions">
-        <button class="btn btn-secondary btn-sm" onclick="addRow()">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
-          <span id="btnAdd">Qo'shish</span>
-        </button>
-        <button class="btn btn-secondary btn-sm" onclick="addMultipleRows()">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
-          <span id="btnAdd5">5 ta qo'shish</span>
-        </button>
-        <button class="btn btn-secondary btn-sm" onclick="resetAll()">
-          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
-          <span id="btnReset">Tozalash</span>
-        </button>
-      </div>
-      <div class="calculate-section">
-        <button class="btn btn-success btn-lg" onclick="calculate()">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          <span id="btnCalc">Hisoblash</span>
-        </button>
-        <span class="hint" id="algoNote">MaxRects optimizatsiya algoritmi</span>
-      </div>
-      <div class="error-msg" id="errorMsg"></div>
-    </div>
-  </section>
-
-  <section class="results-container" id="resultsContainer" style="display:none;">
-    <div class="results-header">
-      <h2 class="results-title" id="lblResult">Natija</h2>
-      <div class="no-print" style="display:flex;gap:8px;">
-        <button class="btn btn-primary" onclick="savePDF()">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6M9 15l3 3 3-3"/></svg>
-          <span id="btnPDF">PDF saqlash</span>
-        </button>
-        <button class="btn btn-secondary" onclick="window.print()">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
-          <span id="btnPrint">Chop etish</span>
-        </button>
-      </div>
-    </div>
-    <div class="stats-bar" id="statsBar"></div>
-    <div class="sheets-grid" id="sheetsGrid"></div>
-  </section>
-
-  <section class="empty-state no-print" id="emptyState">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
-    <p id="emptyText">List o'lchamini kiriting, kerakli bo'laklarni qo'shing va "Hisoblash" tugmasini bosing</p>
-  </section>
-</main>
-
-<div class="toast" id="toast">
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-  <span id="toastText">Saqlandi</span>
+<div class="settings-panel no-print" id="settingsPanel">
+<div class="settings-inner">
+<div class="settings-grid">
+<div class="setting-group">
+<label id="lblUnit">O'lchov birligi</label>
+<div class="seg" id="unitSeg">
+<button data-unit="m" onclick="setUnit(this)">Metr</button>
+<button data-unit="cm" class="active" onclick="setUnit(this)">Santimetr</button>
+<button data-unit="mm" onclick="setUnit(this)">Millimetr</button>
+</div>
+</div>
+<div class="setting-group">
+<label id="lblLang">Til</label>
+<div class="seg" id="langSeg">
+<button class="lang-btn active" data-lang="uz" onclick="setLang(this)" title="O'zbekcha">
+<svg class="flag" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="20" fill="#fff"/><rect width="30" height="6.2" y="0" fill="#0099b5"/><rect width="30" height="6.2" y="13.8" fill="#1eb53a"/><rect width="30" height="1.2" y="6.2" fill="#ce1126"/><rect width="30" height="1.2" y="12.6" fill="#ce1126"/><g><circle cx="6" cy="3.1" r="2.1" fill="#fff"/><circle cx="6.8" cy="3.1" r="2.1" fill="#0099b5"/></g></svg>
+<span class="lang-code">Uz</span>
+</button>
+<button class="lang-btn" data-lang="ru" onclick="setLang(this)" title="Русский">
+<svg class="flag" viewBox="0 0 30 20" xmlns="http://www.w3.org/2000/svg"><rect width="30" height="6.67" y="0" fill="#fff"/><rect width="30" height="6.67" y="6.67" fill="#0039a6"/><rect width="30" height="6.66" y="13.33" fill="#d52b1e"/></svg>
+<span class="lang-code">Ru</span>
+</button>
+</div>
+</div>
+<div class="setting-group">
+<label id="lblTheme">Mavzu</label>
+<div class="seg" id="themeSeg">
+<button data-theme="light" class="active" onclick="setTheme(this)">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+<span id="themeLight">Kun</span>
+</button>
+<button data-theme="dark" onclick="setTheme(this)">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+<span id="themeDark">Tun</span>
+</button>
+</div>
+</div>
+</div>
+<div class="contact-block">
+<div class="contact-title" id="lblContact">Biz bilan aloqa</div>
+<div class="contact-author" id="contactAuthor">Dastur yaratuvchisi: <span>Azizbek Asqarov</span></div>
+<div class="contact-phones">
+<a class="contact-phone" href="tel:+998934831289">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
++998 93-483-12-89
+</a>
+<a class="contact-phone" href="tel:+998946893515">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
++998 94 689-35-15
+</a>
+</div>
+</div>
+<div class="settings-footer">
+<button class="btn btn-primary" onclick="saveSettings()">
+<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg>
+<span id="btnSaveSettings">Saqlash</span>
+</button>
+</div>
+</div>
 </div>
 
-<footer>
-  <div class="footer-inner">
-    <div class="footer-author" id="author">Dastur yaratuvchisi: <span>Azizbek Asqarov</span></div>
-    <div class="footer-version">Dastur versiyasi: v 1.0.0</div>
-  </div>
+<section class="input-section no-print">
+<div class="panel">
+<div class="material-block">
+<div class="material-head">
+<div class="panel-title" id="lblMaterialBase">Materiallar bazasi</div>
+<button class="btn btn-primary btn-sm" id="btnSaveMaterial" onclick="openMaterialModal()">
+<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg>
+<span id="btnSaveMatShort">Saqlash</span>
+</button>
+</div>
+<div class="material-dropdown">
+<button class="material-current" id="materialCurrent" onclick="toggleMaterialMenu()">
+<span class="mc-num" id="mcNum" style="display:none">1</span>
+<span class="mc-info">
+<span class="mc-name" id="mcName"></span>
+<span class="mc-meta" id="mcMeta"></span>
+</span>
+<span class="mc-placeholder" id="mcPlaceholder">— Material tanlang —</span>
+<svg class="mc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+</button>
+<div class="material-menu" id="materialMenu">
+<ul class="material-list" id="materialList"></ul>
+</div>
+</div>
+</div>
+
+<div class="panel-title" id="lblSheetSettings">List sozlamalari</div>
+<div class="sheet-inputs">
+<div class="input-row">
+<div class="input-group">
+<label><span id="lblWidth">Eni</span> (<span class="unit-lbl">sm</span>)</label>
+<input type="number" id="sheetWidth" value="275" min="0.1" step="0.1">
+</div>
+<div class="input-group">
+<label><span id="lblHeight">Bo'yi</span> (<span class="unit-lbl">sm</span>)</label>
+<input type="number" id="sheetHeight" value="183" min="0.1" step="0.1">
+</div>
+</div>
+<div class="divider-block">
+<div class="input-group">
+<label id="lblKerf">Arra haqqi (mm) — ixtiyoriy</label>
+<input type="number" id="kerf" value="4" min="0" max="100" step="0.5" placeholder="0">
+<span class="hint" id="hintKerf">Har doim millimetrda. Oyna uchun 0. DSP/LDSP uchun 1-100 mm.</span>
+</div>
+<div class="setting-group">
+<label id="lblCutDir">Kesish yo'nalishi</label>
+<div class="seg" id="cutSeg">
+<button data-dir="auto" class="active" onclick="setCutDir(this)">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg>
+<span id="dirAuto">Avto</span>
+</button>
+<button data-dir="horizontal" onclick="setCutDir(this)">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20"/><path d="M2 6h20M2 18h20" opacity="0.4"/></svg>
+<span id="dirHor">Gorizontal</span>
+</button>
+<button data-dir="vertical" onclick="setCutDir(this)">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20"/><path d="M6 2v20M18 2v20" opacity="0.4"/></svg>
+<span id="dirVer">Vertikal</span>
+</button>
+</div>
+<span class="hint" id="hintAuto">Avto — dastur eng kam chiqimli usulni o'zi tanlaydi.</span>
+</div>
+<div class="input-group">
+<label style="display:flex;align-items:center;gap:8px;cursor:pointer;">
+<input type="checkbox" id="allowRotate" checked style="width:auto;">
+<span id="lblRotate">Bo'laklarni 90° aylantirish mumkin</span>
+</label>
+</div>
+</div>
+<div class="divider-block">
+<div class="panel-title" style="margin:0" id="lblPriceSection">Narxlar (ixtiyoriy)</div>
+<div class="input-group">
+<label id="lblCostPrice">Butun maxsulot tan narxi (1 list)</label>
+<input type="text" id="costPrice" class="money-input" inputmode="numeric" autocomplete="off" placeholder="0">
+<div class="unit-cost-box" id="unitCostBox"></div>
+</div>
+<div class="input-group">
+<label id="lblMarkup">Ustama / daromad (1 m² uchun)</label>
+<input type="text" id="markup" class="money-input" inputmode="numeric" autocomplete="off" placeholder="0">
+<span class="hint" id="hintPrice">Tan narxi — bitta listni sotib olish narxi. Ustama — 1 m² ustiga qo'yadigan daromad summasi. Ikkalasi ham ixtiyoriy.</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="panel">
+<div class="panel-title" id="lblPieces">Kerakli bo'laklar</div>
+<div class="pieces-table-wrap">
+<table>
+<thead>
+<tr>
+<th id="thName">Nomi</th>
+<th><span id="thW">Eni</span> (<span class="unit-lbl">sm</span>)</th>
+<th><span id="thH">Bo'yi</span> (<span class="unit-lbl">sm</span>)</th>
+<th id="thQty">Soni</th>
+<th id="thColor">Rang</th>
+<th></th>
+</tr>
+</thead>
+<tbody id="piecesBody"></tbody>
+</table>
+</div>
+<div class="table-actions">
+<button class="btn btn-secondary btn-sm" onclick="addRow()">
+<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+<span id="btnAdd">Qo'shish</span>
+</button>
+<button class="btn btn-secondary btn-sm" onclick="addMultipleRows()">
+<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+<span id="btnAdd5">5 ta qo'shish</span>
+</button>
+<button class="btn btn-secondary btn-sm" onclick="resetAll()">
+<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
+<span id="btnReset">Tozalash</span>
+</button>
+</div>
+<div class="calculate-section">
+<button class="btn btn-success btn-lg" onclick="calculate()">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+<span id="btnCalc">Hisoblash</span>
+</button>
+<span class="hint" id="algoNote">MaxRects optimizatsiya algoritmi</span>
+</div>
+<div class="error-msg" id="errorMsg"></div>
+</div>
+</section>
+
+<section class="results-container" id="resultsContainer" style="display:none;">
+<div class="order-banner" id="orderBanner">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 8v13H3V8"/><path d="M1 3h22v5H1z"/><path d="M10 12h4"/></svg>
+<span class="ob-text" id="orderBannerText"></span>
+<span class="ob-date" id="orderBannerDate"></span>
+</div>
+<div class="results-header">
+<h2 class="results-title" id="lblResult">Natija</h2>
+<div class="no-print" style="display:flex;gap:8px;flex-wrap:wrap;">
+<button class="btn btn-success" onclick="openSaveOrder()">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 8v13H3V8"/><path d="M1 3h22v5H1z"/><path d="M10 12h4"/></svg>
+<span id="btnArchiveSave">Arxivga saqlash</span>
+</button>
+<button class="btn btn-primary" onclick="savePDF()">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M12 18v-6M9 15l3 3 3-3"/></svg>
+<span id="btnPDF">PDF saqlash</span>
+</button>
+<button class="btn btn-secondary" onclick="window.print()">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+<span id="btnPrint">Chop etish</span>
+</button>
+</div>
+</div>
+<div class="stats-bar" id="statsBar"></div>
+<div class="fin-report" id="finReport" style="display:none;"></div>
+<div class="sheets-grid" id="sheetsGrid"></div>
+</section>
+
+<section class="empty-state no-print" id="emptyState">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
+<p id="emptyText">List o'lchamini kiriting, kerakli bo'laklarni qo'shing va "Hisoblash" tugmasini bosing</p>
+</section>
+</main>
+
+<!-- Material saqlash modali -->
+<div class="modal-backdrop no-print" id="materialModal">
+<div class="modal">
+<h3 id="modalTitle">Materialni saqlash</h3>
+<div class="input-group">
+<label id="lblMatName">Material nomi</label>
+<input type="text" id="matName" placeholder="Masalan: DSP oq 16mm" autocomplete="off">
+</div>
+<div class="modal-snapshot" id="matSnapshot"></div>
+<div class="modal-actions">
+<button class="btn btn-secondary" onclick="closeMaterialModal()"><span id="btnCancel">Bekor qilish</span></button>
+<button class="btn btn-primary" onclick="confirmSaveMaterial()"><span id="btnSaveMat">Saqlash</span></button>
+</div>
+</div>
+</div>
+
+<!-- Buyurtmani arxivga saqlash modali -->
+<div class="modal-backdrop no-print" id="orderModal">
+<div class="modal">
+<h3 id="orderModalTitle">Buyurtmani arxivga saqlash</h3>
+<div class="input-group">
+<label id="lblOrderName">Buyurtmachi / ish nomi</label>
+<input type="text" id="orderName" placeholder="Masalan: Alisher aka — oshxona" autocomplete="off" oninput="hideOrderWarn()">
+</div>
+<div class="modal-snapshot" id="orderSnapshot"></div>
+<div class="modal-warn" id="orderWarn"></div>
+<div class="modal-actions" id="orderActions"></div>
+</div>
+</div>
+
+<!-- Arxiv modali -->
+<div class="modal-backdrop no-print" id="archiveModal">
+<div class="modal">
+<h3 id="archiveTitle">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 8v13H3V8"/><path d="M1 3h22v5H1z"/><path d="M10 12h4"/></svg>
+Arxiv
+</h3>
+<div class="archive-toolbar">
+<span class="archive-count" id="archiveCount"></span>
+<button class="btn btn-danger btn-sm" id="btnClearAll" onclick="clearAllArchive()">
+<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m3 0v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6M14 11v6"/></svg>
+<span id="btnClearAllTxt">Hammasini tozalash</span>
+</button>
+</div>
+<ul class="archive-list" id="archiveList" style="flex:1;"></ul>
+<div class="modal-actions">
+<button class="btn btn-secondary" onclick="closeArchive()"><span id="btnArchiveClose">Yopish</span></button>
+</div>
+</div>
+</div>
+
+<div class="toast no-print" id="toast">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+<span id="toastText">Saqlandi</span>
+</div>
+
+<footer class="no-print">
+<div class="footer-inner">
+<div class="footer-author" id="author">Dastur yaratuvchisi: <span>Azizbek Asqarov</span></div>
+<div class="footer-version">Dastur versiyasi: v 2.1.0 · Offlayn</div>
+</div>
 </footer>
 
 <script>
 const I18N = {
-  uz: {
-    tagline: "DSP · Laminat · Profil · Oyna",
-    unit: "O'lchov birligi", lang: "Til", theme: "Mavzu",
-    themeLight: "Kun", themeDark: "Tun",
-    saveSettings: "Saqlash", settingsSaved: "Sozlamalar saqlandi",
-    sheetSettings: "List sozlamalari", width: "Eni", height: "Bo'yi",
-    kerf: "Arra haqqi (mm) — ixtiyoriy",
-    hintKerf: "Har doim millimetrda. Oyna uchun 0. DSP/LDSP uchun 1-100 mm.",
-    cutDir: "Kesish yo'nalishi", dirAuto: "Avto", dirHor: "Gorizontal", dirVer: "Vertikal",
-    hintAuto: "Avto — dastur eng kam chiqimli usulni o'zi tanlaydi.",
-    rotate: "Bo'laklarni 90° aylantirish mumkin",
-    pieces: "Kerakli bo'laklar", thName: "Nomi", thQty: "Soni", thColor: "Rang",
-    btnAdd: "Qo'shish", btnAdd5: "5 ta qo'shish", btnReset: "Tozalash",
-    btnCalc: "Hisoblash", algoNote: "MaxRects optimizatsiya algoritmi",
-    result: "Natija", btnPDF: "PDF saqlash", btnPrint: "Chop etish",
-    empty: "List o'lchamini kiriting, kerakli bo'laklarni qo'shing va \"Hisoblash\" tugmasini bosing",
-    author: 'Dastur yaratuvchisi: ',
-    stTotalSheets: "Jami listlar", stTotalPieces: "Jami bo'laklar",
-    stEff: "Foydali ishlatildi", stWaste: "Umumiy atxod",
-    sheet: "List", pcs: "Bo'laklar", eff: "Foydali", waste: "Atxod",
-    remnant: "Ortiq (qoldiq)", cut: "Kesish", kerfLabel: "Arra haqqi",
-    errSheet: "List o'lchamini to'g'ri kiriting!",
-    errPiece: "Kamida bitta bo'lak o'lchamini kiriting!",
-    errTooBig: "list o'lchamidan katta!",
-    detal: "Detal",
-    pdfHint: "Ochilgan oynada \"Chop etish\" → \"PDF sifatida saqlash\" ni tanlang.",
-    colorTitle: "Rangni tanlash uchun bosing"
-  },
-  ru: {
-    tagline: "ЛДСП · Ламинат · Профиль · Стекло",
-    unit: "Единица измерения", lang: "Язык", theme: "Тема",
-    themeLight: "День", themeDark: "Ночь",
-    saveSettings: "Сохранить", settingsSaved: "Настройки сохранены",
-    sheetSettings: "Настройки листа", width: "Ширина", height: "Высота",
-    kerf: "Пропил пилы (мм) — необязательно",
-    hintKerf: "Всегда в миллиметрах. Для стекла 0. Для ЛДСП/ДСП 1-100 мм.",
-    cutDir: "Направление реза", dirAuto: "Авто", dirHor: "Горизонт.", dirVer: "Вертик.",
-    hintAuto: "Авто — программа сама выберет самый экономный способ.",
-    rotate: "Разрешить поворот деталей на 90°",
-    pieces: "Необходимые детали", thName: "Название", thQty: "Кол-во", thColor: "Цвет",
-    btnAdd: "Добавить", btnAdd5: "Добавить 5", btnReset: "Очистить",
-    btnCalc: "Рассчитать", algoNote: "Алгоритм оптимизации MaxRects",
-    result: "Результат", btnPDF: "Сохранить PDF", btnPrint: "Печать",
-    empty: "Введите размер листа, добавьте детали и нажмите \"Рассчитать\"",
-    author: 'Разработчик: ',
-    stTotalSheets: "Всего листов", stTotalPieces: "Всего деталей",
-    stEff: "Полезно использовано", stWaste: "Общий отход",
-    sheet: "Лист", pcs: "Детали", eff: "Полезно", waste: "Отход",
-    remnant: "Остаток", cut: "Рез", kerfLabel: "Пропил",
-    errSheet: "Введите корректный размер листа!",
-    errPiece: "Введите размер хотя бы одной детали!",
-    errTooBig: "больше размера листа!",
-    detal: "Деталь",
-    pdfHint: "В открывшемся окне выберите \"Печать\" → \"Сохранить как PDF\".",
-    colorTitle: "Нажмите, чтобы выбрать цвет"
-  }
+uz: {
+tagline:"DSP · Laminat · Profil · Oyna", unit:"O'lchov birligi", lang:"Til", theme:"Mavzu",
+themeLight:"Kun", themeDark:"Tun", saveSettings:"Saqlash", settingsSaved:"Sozlamalar saqlandi",
+sheetSettings:"List sozlamalari", width:"Eni", height:"Bo'yi", kerf:"Arra haqqi (mm) — ixtiyoriy",
+hintKerf:"Har doim millimetrda. Oyna uchun 0. DSP/LDSP uchun 1-100 mm.",
+cutDir:"Kesish yo'nalishi", dirAuto:"Avto", dirHor:"Gorizontal", dirVer:"Vertikal",
+hintAuto:"Avto — dastur eng kam chiqimli usulni o'zi tanlaydi.", rotate:"Bo'laklarni 90° aylantirish mumkin",
+pieces:"Kerakli bo'laklar", thName:"Nomi", thQty:"Soni", thColor:"Rang",
+btnAdd:"Qo'shish", btnAdd5:"5 ta qo'shish", btnReset:"Tozalash", btnCalc:"Hisoblash",
+algoNote:"MaxRects optimizatsiya algoritmi", result:"Natija", btnPDF:"PDF saqlash", btnPrint:"Chop etish",
+empty:"List o'lchamini kiriting, kerakli bo'laklarni qo'shing va \"Hisoblash\" tugmasini bosing",
+author:'Dastur yaratuvchisi: ', stTotalSheets:"Jami listlar", stTotalPieces:"Jami bo'laklar",
+stEff:"Foydali ishlatildi", stWaste:"Umumiy atxod", sheet:"List", pcs:"Bo'laklar", eff:"Foydali", waste:"Atxod",
+remnant:"Ortiq (qoldiq)", cut:"Kesish", kerfLabel:"Arra haqqi",
+errSheet:"List o'lchamini to'g'ri kiriting!", errPiece:"Kamida bitta bo'lak o'lchamini kiriting!",
+errTooBig:"list o'lchamidan katta!", detal:"Detal",
+pdfHint:"Ochilgan oynada \"Chop etish\" → \"PDF sifatida saqlash\" ni tanlang.",
+colorTitle:"Rangni tanlash uchun bosing", install:"O'rnatish",
+priceSection:"Narxlar (ixtiyoriy)", costPrice:"Butun maxsulot tan narxi (1 list)", markup:"Ustama / daromad (1 m² uchun)",
+hintPrice:"Tan narxi — bitta listni sotib olish narxi. Ustama — 1 m² ustiga qo'yadigan daromad summasi. Ikkalasi ham ixtiyoriy.",
+unitCost:"1 m² tan narxi", finReport:"Moliyaviy hisobot", finTotalCost:"Jami tan narxi", finUnitCost:"1 m² tan narxi",
+finUsedValue:"Foydali bo'laklar (tan narxida)", finWasteValue:"Atxotga ketgan qiymat (tan narxida)",
+finMarkup:"Ustama (1 m²)", finProfit:"Bo'laklardan daromad (ustama)", finGrand:"Umumiy summa (tan + daromad)",
+currency:"so'm", finSubSheets:"list", bySize:"Har bir o'lcham bo'yicha hisob",
+thSize:"O'lcham", thCount:"Soni", thArea:"Maydon", thCost:"Tan narxi", thProfit:"Daromad", thTotal:"Umumiy", total:"Jami",
+materialBase:"Materiallar bazasi", matPlaceholder:"— Material tanlang —", saveMaterialTitle:"Materialni saqlash",
+matName:"Material nomi", btnCancel:"Bekor qilish", btnSaveMat:"Saqlash",
+matSaved:"Material saqlandi", matLoaded:"yuklandi", matDeleted:"Material o'chirildi",
+matNeedName:"Material nomini kiriting!", matEmpty:"Hali material saqlanmagan. Sozlamalarni kiritib \"Saqlash\" ni bosing.",
+contact:"Biz bilan aloqa", archive:"Arxiv", archiveSave:"Arxivga saqlash",
+orderModalTitle:"Buyurtmani arxivga saqlash", orderName:"Buyurtmachi / ish nomi",
+btnOrderCancel:"Bekor qilish", btnOrderSave:"Saqlash", btnSaveChanges:"O'zgarishni saqlash", btnSaveNew:"Yangi ro'yxat saqlash",
+btnArchiveClose:"Yopish", orderNeedName:"Buyurtmachi nomini kiriting!", orderSaved:"Buyurtma arxivga saqlandi",
+changesSaved:"O'zgarishlar saqlandi", orderLoaded:"buyurtma yuklandi", orderDeleted:"Buyurtma o'chirildi",
+archiveEmpty:"Arxiv hozircha bo'sh. Hisoblab, \"Arxivga saqlash\" tugmasini bosing.",
+firstCalc:"Avval hisoblang, keyin arxivga saqlaysiz!",
+dupName:"Bu ism ro'yxatda bor. Boshqa ism yozing yoki ism oldiga qo'shimcha qo'shing.",
+fromArchive:"arxivdan", clearAll:"Hammasini tozalash", clearConfirm:"Tasdiqlang — yana bosing",
+allCleared:"Arxiv tozalandi", renamed:"Nomi o'zgartirildi", count:"ta buyurtma"
+},
+ru: {
+tagline:"ЛДСП · Ламинат · Профиль · Стекло", unit:"Единица измерения", lang:"Язык", theme:"Тема",
+themeLight:"День", themeDark:"Ночь", saveSettings:"Сохранить", settingsSaved:"Настройки сохранены",
+sheetSettings:"Настройки листа", width:"Ширина", height:"Высота", kerf:"Пропил пилы (мм) — необязательно",
+hintKerf:"Всегда в миллиметрах. Для стекла 0. Для ЛДСП/ДСП 1-100 мм.",
+cutDir:"Направление реза", dirAuto:"Авто", dirHor:"Горизонт.", dirVer:"Вертик.",
+hintAuto:"Авто — программа сама выберет самый экономный способ.", rotate:"Разрешить поворот деталей на 90°",
+pieces:"Необходимые детали", thName:"Название", thQty:"Кол-во", thColor:"Цвет",
+btnAdd:"Добавить", btnAdd5:"Добавить 5", btnReset:"Очистить", btnCalc:"Рассчитать",
+algoNote:"Алгоритм оптимизации MaxRects", result:"Результат", btnPDF:"Сохранить PDF", btnPrint:"Печать",
+empty:"Введите размер листа, добавьте детали и нажмите \"Рассчитать\"",
+author:'Разработчик: ', stTotalSheets:"Всего листов", stTotalPieces:"Всего деталей",
+stEff:"Полезно использовано", stWaste:"Общий отход", sheet:"Лист", pcs:"Детали", eff:"Полезно", waste:"Отход",
+remnant:"Остаток", cut:"Рез", kerfLabel:"Пропил",
+errSheet:"Введите корректный размер листа!", errPiece:"Введите размер хотя бы одной детали!",
+errTooBig:"больше размера листа!", detal:"Деталь",
+pdfHint:"В открывшемся окне выберите \"Печать\" → \"Сохранить как PDF\".",
+colorTitle:"Нажмите, чтобы выбрать цвет", install:"Установить",
+priceSection:"Цены (необязательно)", costPrice:"Себестоимость всего листа (1 лист)", markup:"Наценка / прибыль (за 1 м²)",
+hintPrice:"Себестоимость — цена покупки одного листа. Наценка — прибыль на 1 м². Оба поля необязательны.",
+unitCost:"Себестоимость 1 м²", finReport:"Финансовый отчёт", finTotalCost:"Общая себестоимость", finUnitCost:"Себестоимость 1 м²",
+finUsedValue:"Полезные детали (по себест.)", finWasteValue:"Стоимость отхода (по себест.)",
+finMarkup:"Наценка (1 м²)", finProfit:"Прибыль с деталей (наценка)", finGrand:"Общая сумма (себест. + прибыль)",
+currency:"сум", finSubSheets:"лист.", bySize:"Расчёт по каждому размеру",
+thSize:"Размер", thCount:"Кол-во", thArea:"Площадь", thCost:"Себест.", thProfit:"Прибыль", thTotal:"Итого", total:"Итого",
+materialBase:"База материалов", matPlaceholder:"— Выберите материал —", saveMaterialTitle:"Сохранить материал",
+matName:"Название материала", btnCancel:"Отмена", btnSaveMat:"Сохранить",
+matSaved:"Материал сохранён", matLoaded:"загружен", matDeleted:"Материал удалён",
+matNeedName:"Введите название материала!", matEmpty:"Материалы ещё не сохранены. Введите настройки и нажмите \"Сохранить\".",
+contact:"Свяжитесь с нами", archive:"Архив", archiveSave:"Сохранить в архив",
+orderModalTitle:"Сохранить заказ в архив", orderName:"Заказчик / название работы",
+btnOrderCancel:"Отмена", btnOrderSave:"Сохранить", btnSaveChanges:"Сохранить изменения", btnSaveNew:"Сохранить как новый",
+btnArchiveClose:"Закрыть", orderNeedName:"Введите имя заказчика!", orderSaved:"Заказ сохранён в архив",
+changesSaved:"Изменения сохранены", orderLoaded:"заказ загружен", orderDeleted:"Заказ удалён",
+archiveEmpty:"Архив пока пуст. Рассчитайте и нажмите \"Сохранить в архив\".",
+firstCalc:"Сначала рассчитайте, потом сохраняйте в архив!",
+dupName:"Это имя уже есть в списке. Введите другое имя или добавьте приставку.",
+fromArchive:"из архива", clearAll:"Очистить всё", clearConfirm:"Подтвердите — нажмите ещё раз",
+allCleared:"Архив очищен", renamed:"Имя изменено", count:"заказов"
+}
 };
 
-let lang = 'uz';
-let unit = 'cm';
-let cutDir = 'auto';
-let rowCount = 0;
-let lastResult = null;
+let lang='uz', unit='cm', cutDir='auto', rowCount=0, lastResult=null;
+let materials=[], activeMaterial=-1;
+let archive=[];
+let currentOrderId=null;      // arxivdan yuklangan buyurtma id'si
+let currentOrderName='';      // uning nomi (banner uchun)
+let currentOrderTs=0;
+let clearArmed=false, clearTimer=null;
+let editingArchiveId=null;
 
-// 1 birlik nechta mm ga teng
-const UNIT_TO_MM = { m: 1000, cm: 10, mm: 1 };
-const UNIT_LABEL = { uz: { m: 'm', cm: 'sm', mm: 'mm' }, ru: { m: 'м', cm: 'см', mm: 'мм' } };
+const STORE_KEY='aqlli-kesuvchi-v1', MAT_KEY='aqlli-kesuvchi-materials-v1', ARCH_KEY='aqlli-kesuvchi-archive-v1';
+const UNIT_TO_MM={ m:1000, cm:10, mm:1 };
+const UNIT_LABEL={ uz:{m:'m',cm:'sm',mm:'mm'}, ru:{m:'м',cm:'см',mm:'мм'} };
 
 function t(key){ return I18N[lang][key]; }
-
-// mm -> tanlangan birlikka o'girib, formatlaydi
-function toUnit(mm){ return mm / UNIT_TO_MM[unit]; }
-function fmtU(mm){
-  const v = mm / UNIT_TO_MM[unit];
-  const r = Math.round(v*1000)/1000;
-  return (Math.abs(r-Math.round(r))<1e-4 ? Math.round(r) : parseFloat(r.toFixed(2))).toString().replace('.',',');
-}
+function fmtU(mm){ const v=mm/UNIT_TO_MM[unit]; const r=Math.round(v*1000)/1000; return (Math.abs(r-Math.round(r))<1e-4?Math.round(r):parseFloat(r.toFixed(2))).toString().replace('.',','); }
+function groupDigits(v){ return v.toString().replace(/\B(?=(\d{3})+(?!\d))/g,' '); }
+function fmtMoney(n){ const neg=n<0; let v=Math.abs(Math.round(n)); return (neg?'-':'')+groupDigits(v)+' '+t('currency'); }
+function fmtM2(m2){ const r=Math.round(m2*1000)/1000; return (Math.abs(r-Math.round(r))<1e-4?Math.round(r):parseFloat(r.toFixed(3))).toString().replace('.',',')+' m²'; }
+function parseMoneyEl(el){ return parseFloat((el.value||'').replace(/\s/g,'').replace(/[^\d.]/g,''))||0; }
+function formatMoneyInput(el){ const d=(el.value||'').replace(/\D/g,''); el.value=d?groupDigits(d):''; }
+function escapeHtml(s){ return (s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+function uid(){ return Date.now().toString(36)+Math.random().toString(36).slice(2,7); }
 
 function applyLang(){
-  const L=I18N[lang];
-  document.documentElement.lang=lang;
-  document.getElementById('appTagline').textContent=L.tagline;
-  document.getElementById('lblUnit').textContent=L.unit;
-  document.getElementById('lblLang').textContent=L.lang;
-  document.getElementById('lblTheme').textContent=L.theme;
-  document.getElementById('themeLight').textContent=L.themeLight;
-  document.getElementById('themeDark').textContent=L.themeDark;
-  document.getElementById('btnSaveSettings').textContent=L.saveSettings;
-  document.getElementById('lblSheetSettings').textContent=L.sheetSettings;
-  document.getElementById('lblWidth').textContent=L.width;
-  document.getElementById('lblHeight').textContent=L.height;
-  document.getElementById('lblKerf').textContent=L.kerf;
-  document.getElementById('hintKerf').textContent=L.hintKerf;
-  document.getElementById('lblCutDir').textContent=L.cutDir;
-  document.getElementById('dirAuto').textContent=L.dirAuto;
-  document.getElementById('dirHor').textContent=L.dirHor;
-  document.getElementById('dirVer').textContent=L.dirVer;
-  document.getElementById('hintAuto').textContent=L.hintAuto;
-  document.getElementById('lblRotate').textContent=L.rotate;
-  document.getElementById('lblPieces').textContent=L.pieces;
-  document.getElementById('thName').textContent=L.thName;
-  document.getElementById('thW').textContent=L.width;
-  document.getElementById('thH').textContent=L.height;
-  document.getElementById('thQty').textContent=L.thQty;
-  document.getElementById('thColor').textContent=L.thColor;
-  document.getElementById('btnAdd').textContent=L.btnAdd;
-  document.getElementById('btnAdd5').textContent=L.btnAdd5;
-  document.getElementById('btnReset').textContent=L.btnReset;
-  document.getElementById('btnCalc').textContent=L.btnCalc;
-  document.getElementById('algoNote').textContent=L.algoNote;
-  document.getElementById('lblResult').textContent=L.result;
-  document.getElementById('btnPDF').textContent=L.btnPDF;
-  document.getElementById('btnPrint').textContent=L.btnPrint;
-  document.getElementById('emptyText').textContent=L.empty;
-  document.getElementById('author').innerHTML=L.author+'<span>Azizbek Asqarov</span>';
-  document.querySelectorAll('.color-picker').forEach(el=>el.title=L.colorTitle);
-  updateUnitLabels();
-  if(lastResult) renderResults(lastResult);
+const L=I18N[lang];
+document.documentElement.lang=lang;
+document.getElementById('appTagline').textContent=L.tagline;
+document.getElementById('lblUnit').textContent=L.unit;
+document.getElementById('lblLang').textContent=L.lang;
+document.getElementById('lblTheme').textContent=L.theme;
+document.getElementById('themeLight').textContent=L.themeLight;
+document.getElementById('themeDark').textContent=L.themeDark;
+document.getElementById('lblContact').textContent=L.contact;
+document.getElementById('contactAuthor').innerHTML=L.author+'<span>Azizbek Asqarov</span>';
+document.getElementById('btnSaveSettings').textContent=L.saveSettings;
+document.getElementById('lblMaterialBase').textContent=L.materialBase;
+document.getElementById('btnSaveMatShort').textContent=L.saveSettings;
+document.getElementById('mcPlaceholder').textContent=L.matPlaceholder;
+document.getElementById('lblSheetSettings').textContent=L.sheetSettings;
+document.getElementById('lblWidth').textContent=L.width;
+document.getElementById('lblHeight').textContent=L.height;
+document.getElementById('lblKerf').textContent=L.kerf;
+document.getElementById('hintKerf').textContent=L.hintKerf;
+document.getElementById('lblCutDir').textContent=L.cutDir;
+document.getElementById('dirAuto').textContent=L.dirAuto;
+document.getElementById('dirHor').textContent=L.dirHor;
+document.getElementById('dirVer').textContent=L.dirVer;
+document.getElementById('hintAuto').textContent=L.hintAuto;
+document.getElementById('lblRotate').textContent=L.rotate;
+document.getElementById('lblPriceSection').textContent=L.priceSection;
+document.getElementById('lblCostPrice').textContent=L.costPrice;
+document.getElementById('lblMarkup').textContent=L.markup;
+document.getElementById('hintPrice').textContent=L.hintPrice;
+document.getElementById('lblPieces').textContent=L.pieces;
+document.getElementById('thName').textContent=L.thName;
+document.getElementById('thW').textContent=L.width;
+document.getElementById('thH').textContent=L.height;
+document.getElementById('thQty').textContent=L.thQty;
+document.getElementById('thColor').textContent=L.thColor;
+document.getElementById('btnAdd').textContent=L.btnAdd;
+document.getElementById('btnAdd5').textContent=L.btnAdd5;
+document.getElementById('btnReset').textContent=L.btnReset;
+document.getElementById('btnCalc').textContent=L.btnCalc;
+document.getElementById('algoNote').textContent=L.algoNote;
+document.getElementById('lblResult').textContent=L.result;
+document.getElementById('btnArchiveSave').textContent=L.archiveSave;
+document.getElementById('btnPDF').textContent=L.btnPDF;
+document.getElementById('btnPrint').textContent=L.btnPrint;
+document.getElementById('emptyText').textContent=L.empty;
+document.getElementById('btnInstall').textContent=L.install;
+document.getElementById('modalTitle').textContent=L.saveMaterialTitle;
+document.getElementById('lblMatName').textContent=L.matName;
+document.getElementById('btnCancel').textContent=L.btnCancel;
+document.getElementById('btnSaveMat').textContent=L.btnSaveMat;
+document.getElementById('orderModalTitle').textContent=L.orderModalTitle;
+document.getElementById('lblOrderName').textContent=L.orderName;
+document.getElementById('archiveTitle').lastChild.textContent=' '+L.archive;
+document.getElementById('btnClearAllTxt').textContent=L.clearAll;
+document.getElementById('btnArchiveClose').textContent=L.btnArchiveClose;
+document.getElementById('author').innerHTML=L.author+'<span>Azizbek Asqarov</span>';
+document.querySelectorAll('.color-picker').forEach(el=>el.title=L.colorTitle);
+updateUnitLabels(); updateUnitCost(); renderMaterialList(); updateMaterialCurrent(); renderArchiveList(); updateOrderBanner();
+if(lastResult) renderResults(lastResult);
 }
-function updateUnitLabels(){
-  const lbl=UNIT_LABEL[lang][unit];
-  document.querySelectorAll('.unit-lbl').forEach(el=>el.textContent=lbl);
-}
+function updateUnitLabels(){ const lbl=UNIT_LABEL[lang][unit]; document.querySelectorAll('.unit-lbl').forEach(el=>el.textContent=lbl); }
 
 function toggleSettings(){ document.getElementById('settingsPanel').classList.toggle('open'); }
-function saveSettings(){ document.getElementById('settingsPanel').classList.remove('open'); showToast(t('settingsSaved')); }
-function setUnit(btn){ document.querySelectorAll('#unitSeg button').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); unit=btn.dataset.unit; updateUnitLabels(); if(lastResult) renderResults(lastResult); }
-function setLang(btn){ document.querySelectorAll('#langSeg button').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); lang=btn.dataset.lang; applyLang(); }
-function setTheme(btn){ document.querySelectorAll('#themeSeg button').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); document.documentElement.setAttribute('data-theme',btn.dataset.theme); if(lastResult) renderResults(lastResult); }
-function setCutDir(btn){ document.querySelectorAll('#cutSeg button').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); cutDir=btn.dataset.dir; }
+function saveSettings(){ document.getElementById('settingsPanel').classList.remove('open'); persist(); showToast(t('settingsSaved')); }
+function setUnit(btn){ document.querySelectorAll('#unitSeg button').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); unit=btn.dataset.unit; updateUnitLabels(); updateUnitCost(); renderMaterialList(); updateMaterialCurrent(); if(lastResult) renderResults(lastResult); persist(); }
+function setLang(btn){ document.querySelectorAll('#langSeg button').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); lang=btn.dataset.lang; applyLang(); persist(); }
+function setTheme(btn){ document.querySelectorAll('#themeSeg button').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); document.documentElement.setAttribute('data-theme',btn.dataset.theme); if(lastResult) renderResults(lastResult); persist(); }
+function setCutDir(btn){ document.querySelectorAll('#cutSeg button').forEach(b=>b.classList.remove('active')); btn.classList.add('active'); cutDir=btn.dataset.dir; persist(); }
 
 let toastTimer=null;
-function showToast(msg){ const el=document.getElementById('toast'); document.getElementById('toastText').textContent=msg; el.classList.add('show'); clearTimeout(toastTimer); toastTimer=setTimeout(()=>el.classList.remove('show'),2200); }
+function showToast(msg,warn){ const el=document.getElementById('toast'); document.getElementById('toastText').textContent=msg; el.classList.toggle('warn',!!warn); el.classList.add('show'); clearTimeout(toastTimer); toastTimer=setTimeout(()=>el.classList.remove('show'),2600); }
 
 function tickClock(){
-  const parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Tashkent',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false}).formatToParts(new Date());
-  const get=ty=>(parts.find(p=>p.type===ty)||{}).value||'00';
-  document.getElementById('clkH').textContent=get('hour');
-  document.getElementById('clkM').textContent=get('minute');
-  document.getElementById('clkS').textContent=get('second');
+const parts=new Intl.DateTimeFormat('en-GB',{timeZone:'Asia/Tashkent',hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false}).formatToParts(new Date());
+const get=ty=>(parts.find(p=>p.type===ty)||{}).value||'00';
+document.getElementById('clkH').textContent=get('hour'); document.getElementById('clkM').textContent=get('minute'); document.getElementById('clkS').textContent=get('second');
 }
 setInterval(tickClock,1000); tickClock();
 
 const PIECE_COLORS=['#4b9fe0','#3fb489','#e0863f','#a866d8','#37b0c4','#c9a53c','#7b6ad8','#8bbf3f','#c46a94','#4b8fd0','#d8a24b','#5aae6e','#5f7fd8','#c4a83c','#c46ab0','#4faf94','#d86a52','#5f7bd8','#7bbf5a','#9a6fd0'];
 const getColor=i=>PIECE_COLORS[i%PIECE_COLORS.length];
 
-function addRow(name='',w='',h='',qty='1'){
-  const tbody=document.getElementById('piecesBody');
-  const row=document.createElement('tr');
-  const idx=rowCount; const col=getColor(idx);
-  row.innerHTML=`
-    <td><input type="text" value="${name}" placeholder="${t('detal')} ${idx+1}"></td>
-    <td><input type="number" value="${w}" min="0.1" step="0.1"></td>
-    <td><input type="number" value="${h}" min="0.1" step="0.1"></td>
-    <td><input type="number" value="${qty}" min="1" step="1" style="width:60px"></td>
-    <td><label class="color-picker" style="background:${col}" title="${t('colorTitle')}">
-      <input type="color" value="${col}" oninput="this.parentElement.style.background=this.value">
-      <svg class="pencil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>
-    </label></td>
-    <td><button class="delete-row" onclick="this.closest('tr').remove()">&times;</button></td>`;
-  tbody.appendChild(row); rowCount++;
+function addRow(name='',w='',h='',qty='1',color=null){
+const tbody=document.getElementById('piecesBody');
+const row=document.createElement('tr');
+const idx=rowCount; const col=color||getColor(idx);
+row.innerHTML=`
+<td><input type="text" value="${escapeHtml(name)}" placeholder="${t('detal')} ${idx+1}"></td>
+<td><input type="number" value="${w}" min="0.1" step="0.1"></td>
+<td><input type="number" value="${h}" min="0.1" step="0.1"></td>
+<td><input type="number" value="${qty}" min="1" step="1" style="width:60px"></td>
+<td><label class="color-picker" style="background:${col}" title="${t('colorTitle')}">
+<input type="color" value="${col}" oninput="this.parentElement.style.background=this.value; persist();">
+<svg class="pencil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg>
+</label></td>
+<td><button class="delete-row" onclick="this.closest('tr').remove(); persist();">&times;</button></td>`;
+tbody.appendChild(row); rowCount++;
+row.querySelectorAll('input').forEach(inp=>inp.addEventListener('change', persist));
 }
-function addMultipleRows(){ for(let i=0;i<5;i++) addRow(); }
+function addMultipleRows(){ for(let i=0;i<5;i++) addRow(); persist(); }
 function resetAll(){
-  document.getElementById('piecesBody').innerHTML='';
-  document.getElementById('resultsContainer').style.display='none';
-  document.getElementById('emptyState').style.display='block';
-  document.getElementById('errorMsg').classList.remove('show');
-  lastResult=null; rowCount=0; addRow(); addRow(); addRow();
+document.getElementById('piecesBody').innerHTML='';
+document.getElementById('resultsContainer').style.display='none';
+document.getElementById('emptyState').style.display='block';
+document.getElementById('errorMsg').classList.remove('show');
+lastResult=null; rowCount=0; currentOrderId=null; currentOrderName=''; currentOrderTs=0;
+updateOrderBanner(); addRow(); addRow(); addRow(); persist();
 }
 function showError(msg){ const el=document.getElementById('errorMsg'); el.textContent=msg; el.classList.add('show'); setTimeout(()=>el.classList.remove('show'),5000); }
 
-// Bo'laklarni o'qib, HAMMA o'lchamni mm ga o'giramiz
 function getPiecesMm(){
-  const rows=document.querySelectorAll('#piecesBody tr');
-  const pieces=[]; let ci=0; const f=UNIT_TO_MM[unit];
-  rows.forEach(row=>{
-    const inp=row.querySelectorAll('input');
-    const name=inp[0].value.trim()||`${t('detal')} ${ci+1}`;
-    const w=parseFloat(inp[1].value);
-    const h=parseFloat(inp[2].value);
-    const qty=parseInt(inp[3].value)||0;
-    const color=inp[4].value;
-    if(w>0&&h>0&&qty>0){ for(let i=0;i<qty;i++) pieces.push({name,w:w*f,h:h*f,color}); }
-    ci++;
-  });
-  return pieces;
+const rows=document.querySelectorAll('#piecesBody tr'); const pieces=[]; let ci=0; const f=UNIT_TO_MM[unit];
+rows.forEach(row=>{ const inp=row.querySelectorAll('input'); const name=inp[0].value.trim()||`${t('detal')} ${ci+1}`; const w=parseFloat(inp[1].value); const h=parseFloat(inp[2].value); const qty=parseInt(inp[3].value)||0; const color=inp[4].value; if(w>0&&h>0&&qty>0){ for(let i=0;i<qty;i++) pieces.push({name,w:w*f,h:h*f,color}); } ci++; });
+return pieces;
+}
+function updateUnitCost(){
+const box=document.getElementById('unitCostBox'); const f=UNIT_TO_MM[unit];
+const SW=(parseFloat(document.getElementById('sheetWidth').value)||0)*f, SH=(parseFloat(document.getElementById('sheetHeight').value)||0)*f;
+const areaM2=SW*SH/1e6; const cost=parseMoneyEl(document.getElementById('costPrice'));
+if(cost>0 && areaM2>0){ box.innerHTML=`${t('unitCost')}: ${fmtMoney(cost/areaM2)} <span>/ m²</span>`; box.style.display='block'; }
+else { box.style.display='none'; box.innerHTML=''; }
 }
 
-/* ===== MaxRects (barcha o'lchamlar mm da) ===== */
-function packMaxRects(SW,SH,pieces,kerf,rotate,forceDir){
-  const heuristics=forceDir?['DIR']:['BAF','BSSF','BLSF','BL'];
-  let best=null;
-  for(const h of heuristics){
-    const r=runPacking(SW,SH,pieces,kerf,rotate,forceDir,h);
-    if(!best||r.sheets.length<best.sheets.length||(r.sheets.length===best.sheets.length&&r.waste<best.waste)) best=r;
-  }
-  return best.sheets;
+/* ===== Materiallar bazasi ===== */
+function loadMaterials(){ try{ materials=JSON.parse(localStorage.getItem(MAT_KEY)||'[]'); }catch(e){ materials=[]; } if(!Array.isArray(materials)) materials=[]; }
+function saveMaterialsStore(){ try{ localStorage.setItem(MAT_KEY,JSON.stringify(materials)); }catch(e){} }
+function materialMeta(m){ const ul=UNIT_LABEL[lang][m.unit||unit]; let s=`${m.sheetWidth||'?'}×${m.sheetHeight||'?'} ${ul}`; const cost=parseFloat((m.costPrice||'').toString().replace(/\s/g,''))||0; if(cost>0) s+=` · ${fmtMoney(cost)}`; return s; }
+function toggleMaterialMenu(){ if(!materials.length){ openMaterialModal(); return; } const menu=document.getElementById('materialMenu'); const cur=document.getElementById('materialCurrent'); const open=menu.classList.toggle('open'); cur.classList.toggle('open',open); }
+function closeMaterialMenu(){ document.getElementById('materialMenu').classList.remove('open'); document.getElementById('materialCurrent').classList.remove('open'); }
+function updateMaterialCurrent(){
+const numEl=document.getElementById('mcNum'), nameEl=document.getElementById('mcName'), metaEl=document.getElementById('mcMeta'), phEl=document.getElementById('mcPlaceholder');
+let idx=activeMaterial; if((idx<0||idx>=materials.length) && materials.length) idx=materials.length-1;
+if(idx>=0 && idx<materials.length){ const m=materials[idx]; numEl.style.display='flex'; numEl.textContent=idx+1; nameEl.textContent=m.name; metaEl.textContent=materialMeta(m); phEl.style.display='none'; }
+else { numEl.style.display='none'; nameEl.textContent=''; metaEl.textContent=''; phEl.style.display=''; }
 }
+function renderMaterialList(){
+const list=document.getElementById('materialList');
+if(!materials.length){ list.innerHTML=`<li class="material-empty">${t('matEmpty')}</li>`; return; }
+list.innerHTML=materials.map((m,i)=>`
+<li class="material-item ${i===activeMaterial?'active':''}" onclick="loadMaterial(${i})">
+<span class="material-num">${i+1}</span>
+<span class="material-info"><span class="material-name">${escapeHtml(m.name)}</span><span class="material-meta">${escapeHtml(materialMeta(m))}</span></span>
+<button class="material-del" onclick="event.stopPropagation(); deleteMaterial(${i})"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m3 0v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6M14 11v6"/></svg></button></li>`).join('');
+}
+function openMaterialModal(){ closeMaterialMenu(); document.getElementById('matName').value=''; document.getElementById('matSnapshot').textContent=orderSnapshotText(); document.getElementById('materialModal').classList.add('open'); setTimeout(()=>document.getElementById('matName').focus(),50); }
+function closeMaterialModal(){ document.getElementById('materialModal').classList.remove('open'); }
+function confirmSaveMaterial(){
+const name=document.getElementById('matName').value.trim(); if(!name){ showToast(t('matNeedName'),true); return; }
+const mat={ name, unit, sheetWidth:document.getElementById('sheetWidth').value, sheetHeight:document.getElementById('sheetHeight').value, kerf:document.getElementById('kerf').value, cutDir, rotate:document.getElementById('allowRotate').checked, costPrice:document.getElementById('costPrice').value, markup:document.getElementById('markup').value };
+const ex=materials.findIndex(m=>m.name.toLowerCase()===name.toLowerCase());
+if(ex>=0){ materials[ex]=mat; activeMaterial=ex; } else { materials.push(mat); activeMaterial=materials.length-1; }
+saveMaterialsStore(); renderMaterialList(); updateMaterialCurrent(); closeMaterialModal(); persist(); showToast(t('matSaved'));
+}
+function loadMaterial(i){
+const m=materials[i]; if(!m) return; activeMaterial=i;
+if(m.unit){ unit=m.unit; document.querySelectorAll('#unitSeg button').forEach(b=>b.classList.toggle('active',b.dataset.unit===unit)); updateUnitLabels(); }
+document.getElementById('sheetWidth').value=m.sheetWidth||''; document.getElementById('sheetHeight').value=m.sheetHeight||''; document.getElementById('kerf').value=m.kerf||'0';
+cutDir=m.cutDir||'auto'; document.querySelectorAll('#cutSeg button').forEach(b=>b.classList.toggle('active',b.dataset.dir===cutDir));
+document.getElementById('allowRotate').checked=m.rotate!==false;
+document.getElementById('costPrice').value=m.costPrice||''; document.getElementById('markup').value=m.markup||'';
+formatMoneyInput(document.getElementById('costPrice')); formatMoneyInput(document.getElementById('markup'));
+updateUnitCost(); renderMaterialList(); updateMaterialCurrent(); closeMaterialMenu(); if(lastResult) renderResults(lastResult); persist(); showToast(`${m.name} — ${t('matLoaded')}`);
+}
+function deleteMaterial(i){ if(i<0||i>=materials.length) return; materials.splice(i,1); if(activeMaterial===i) activeMaterial=-1; else if(activeMaterial>i) activeMaterial--; saveMaterialsStore(); renderMaterialList(); updateMaterialCurrent(); if(!materials.length) closeMaterialMenu(); persist(); showToast(t('matDeleted')); }
+
+/* ===== ARXIV ===== */
+function loadArchive(){ try{ archive=JSON.parse(localStorage.getItem(ARCH_KEY)||'[]'); }catch(e){ archive=[]; } if(!Array.isArray(archive)) archive=[]; archive.forEach(e=>{ if(!e.id) e.id=uid(); }); }
+function saveArchiveStore(){ try{ localStorage.setItem(ARCH_KEY,JSON.stringify(archive)); }catch(e){} }
+function updateArchiveBadge(){ const b=document.getElementById('archiveBadge'); if(archive.length){ b.textContent=archive.length; b.style.display='flex'; } else { b.style.display='none'; } }
+function collectRows(){ const rows=[]; document.querySelectorAll('#piecesBody tr').forEach(row=>{ const inp=row.querySelectorAll('input'); rows.push({name:inp[0].value,w:inp[1].value,h:inp[2].value,qty:inp[3].value,color:inp[4].value}); }); return rows; }
+function orderSnapshotText(){
+const ul=UNIT_LABEL[lang][unit]; const w=document.getElementById('sheetWidth').value||'?', h=document.getElementById('sheetHeight').value||'?';
+const cost=parseMoneyEl(document.getElementById('costPrice')), markup=parseMoneyEl(document.getElementById('markup'));
+let s=`${t('sheet')}: ${w}×${h} ${ul}`; if(lastResult) s+=` · ${lastResult.sheets.length} ${t('finSubSheets')}`;
+if(cost>0) s+=` · ${fmtMoney(cost)}`; if(markup>0) s+=` · +${fmtMoney(markup)}/m²`; return s;
+}
+function nameExists(name,exceptId){ const n=name.trim().toLowerCase(); return archive.some(e=>e.name.trim().toLowerCase()===n && e.id!==exceptId); }
+function buildOrderEntry(id){
+return { id: id||uid(), name:'', ts: Date.now(), lang, unit, cutDir,
+sheetWidth:document.getElementById('sheetWidth').value, sheetHeight:document.getElementById('sheetHeight').value,
+kerf:document.getElementById('kerf').value, rotate:document.getElementById('allowRotate').checked,
+costPrice:document.getElementById('costPrice').value, markup:document.getElementById('markup').value,
+rows: collectRows(), summary: lastResult?{sheets:lastResult.sheets.length}:null };
+}
+function hideOrderWarn(){ document.getElementById('orderWarn').classList.remove('show'); }
+function showOrderWarn(){ const w=document.getElementById('orderWarn'); w.textContent=t('dupName'); w.classList.add('show'); }
+function openSaveOrder(){
+if(!lastResult){ showToast(t('firstCalc'),true); return; }
+hideOrderWarn();
+const isEdit = currentOrderId && archive.some(e=>e.id===currentOrderId);
+document.getElementById('orderName').value = isEdit ? currentOrderName : '';
+document.getElementById('orderSnapshot').textContent=orderSnapshotText();
+const acts=document.getElementById('orderActions');
+if(isEdit){
+acts.innerHTML=`
+<button class="btn btn-secondary" onclick="closeSaveOrder()">${t('btnOrderCancel')}</button>
+<button class="btn btn-success" onclick="saveOrderChanges()">${t('btnSaveChanges')}</button>
+<button class="btn btn-primary" onclick="saveOrderNew()">${t('btnSaveNew')}</button>`;
+} else {
+acts.innerHTML=`
+<button class="btn btn-secondary" onclick="closeSaveOrder()">${t('btnOrderCancel')}</button>
+<button class="btn btn-primary" onclick="saveOrderNew()">${t('btnOrderSave')}</button>`;
+}
+document.getElementById('orderModal').classList.add('open');
+setTimeout(()=>document.getElementById('orderName').focus(),50);
+}
+function closeSaveOrder(){ document.getElementById('orderModal').classList.remove('open'); }
+// Yangi ro'yxat sifatida saqlash
+function saveOrderNew(){
+const name=document.getElementById('orderName').value.trim();
+if(!name){ showToast(t('orderNeedName'),true); return; }
+if(nameExists(name,null)){ showOrderWarn(); return; }
+const entry=buildOrderEntry(); entry.name=name;
+archive.unshift(entry);
+currentOrderId=entry.id; currentOrderName=name; currentOrderTs=entry.ts;
+saveArchiveStore(); updateArchiveBadge(); updateOrderBanner(); closeSaveOrder(); showToast(t('orderSaved'));
+}
+// Mavjud buyurtma ustiga o'zgarishni saqlash
+function saveOrderChanges(){
+const name=document.getElementById('orderName').value.trim();
+if(!name){ showToast(t('orderNeedName'),true); return; }
+if(nameExists(name,currentOrderId)){ showOrderWarn(); return; }
+const idx=archive.findIndex(e=>e.id===currentOrderId);
+if(idx<0){ saveOrderNew(); return; }
+const entry=buildOrderEntry(currentOrderId); entry.name=name;
+archive[idx]=entry;
+// eng yangi o'zgargan tepaga
+archive.splice(idx,1); archive.unshift(entry);
+currentOrderName=name; currentOrderTs=entry.ts;
+saveArchiveStore(); updateArchiveBadge(); updateOrderBanner(); closeSaveOrder(); showToast(t('changesSaved'));
+}
+function fmtDateTime(ts){ const d=new Date(ts); return new Intl.DateTimeFormat(lang==='ru'?'ru-RU':'uz-UZ',{day:'2-digit',month:'2-digit',year:'numeric',hour:'2-digit',minute:'2-digit',hour12:false}).format(d); }
+function archiveMeta(e){ const ul=UNIT_LABEL[lang][e.unit||unit]; let s=`${fmtDateTime(e.ts)} · ${e.sheetWidth||'?'}×${e.sheetHeight||'?'} ${ul}`; if(e.summary&&e.summary.sheets) s+=` · ${e.summary.sheets} ${t('finSubSheets')}`; return s; }
+function renderArchiveList(){
+const list=document.getElementById('archiveList');
+document.getElementById('archiveCount').textContent = archive.length ? `${archive.length} ${t('count')}` : '';
+document.getElementById('btnClearAll').style.display = archive.length ? 'inline-flex' : 'none';
+if(!archive.length){ list.innerHTML=`<li class="archive-empty"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 8v13H3V8"/><path d="M1 3h22v5H1z"/><path d="M10 12h4"/></svg><div>${t('archiveEmpty')}</div></li>`; return; }
+list.innerHTML=archive.map((e,i)=>{
+if(e.id===editingArchiveId){
+return `<li class="archive-item">
+<span class="archive-num">${i+1}</span>
+<span class="archive-info"><input class="archive-edit-input" id="editInput" value="${escapeHtml(e.name)}" autocomplete="off"></span>
+<span class="archive-actions">
+<button class="archive-act save" onclick="event.stopPropagation(); commitEditName('${e.id}')" title="Saqlash"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></button>
+<button class="archive-act" onclick="event.stopPropagation(); cancelEditName()" title="Bekor"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+</span></li>`;
+}
+return `<li class="archive-item clickable" onclick="loadArchiveEntry('${e.id}')">
+<span class="archive-num">${i+1}</span>
+<span class="archive-info"><span class="archive-name">${escapeHtml(e.name)}</span><span class="archive-meta">${escapeHtml(archiveMeta(e))}</span></span>
+<span class="archive-actions">
+<button class="archive-act" onclick="event.stopPropagation(); startEditName('${e.id}')" title="Tahrirlash"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4z"/></svg></button>
+<button class="archive-act del" onclick="event.stopPropagation(); deleteArchiveEntry('${e.id}')" title="O'chirish"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2m3 0v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"/><path d="M10 11v6M14 11v6"/></svg></button>
+</span></li>`;
+}).join('');
+if(editingArchiveId){ const inp=document.getElementById('editInput'); if(inp){ inp.focus(); inp.addEventListener('keydown',e=>{ if(e.key==='Enter') commitEditName(editingArchiveId); if(e.key==='Escape') cancelEditName(); }); } }
+}
+function startEditName(id){ editingArchiveId=id; renderArchiveList(); }
+function cancelEditName(){ editingArchiveId=null; renderArchiveList(); }
+function commitEditName(id){
+const inp=document.getElementById('editInput'); if(!inp) return;
+const name=inp.value.trim(); if(!name){ showToast(t('orderNeedName'),true); return; }
+if(nameExists(name,id)){ showToast(t('dupName'),true); return; }
+const e=archive.find(x=>x.id===id); if(e){ e.name=name; if(currentOrderId===id) currentOrderName=name; }
+editingArchiveId=null; saveArchiveStore(); renderArchiveList(); updateOrderBanner(); showToast(t('renamed'));
+}
+function openArchive(){ editingArchiveId=null; clearArmed=false; document.getElementById('btnClearAllTxt').textContent=t('clearAll'); renderArchiveList(); document.getElementById('archiveModal').classList.add('open'); }
+function closeArchive(){ document.getElementById('archiveModal').classList.remove('open'); }
+function deleteArchiveEntry(id){
+const i=archive.findIndex(e=>e.id===id); if(i<0) return;
+archive.splice(i,1);
+if(currentOrderId===id){ currentOrderId=null; currentOrderName=''; updateOrderBanner(); }
+saveArchiveStore(); renderArchiveList(); updateArchiveBadge(); showToast(t('orderDeleted'));
+}
+function clearAllArchive(){
+if(!archive.length) return;
+if(!clearArmed){ clearArmed=true; document.getElementById('btnClearAllTxt').textContent=t('clearConfirm'); clearTimeout(clearTimer); clearTimer=setTimeout(()=>{ clearArmed=false; document.getElementById('btnClearAllTxt').textContent=t('clearAll'); },3000); return; }
+archive=[]; clearArmed=false; document.getElementById('btnClearAllTxt').textContent=t('clearAll');
+currentOrderId=null; currentOrderName=''; updateOrderBanner();
+saveArchiveStore(); renderArchiveList(); updateArchiveBadge(); showToast(t('allCleared'));
+}
+function loadArchiveEntry(id){
+const e=archive.find(x=>x.id===id); if(!e) return;
+if(e.unit){ unit=e.unit; document.querySelectorAll('#unitSeg button').forEach(b=>b.classList.toggle('active',b.dataset.unit===unit)); updateUnitLabels(); }
+document.getElementById('sheetWidth').value=e.sheetWidth||''; document.getElementById('sheetHeight').value=e.sheetHeight||''; document.getElementById('kerf').value=e.kerf||'0';
+cutDir=e.cutDir||'auto'; document.querySelectorAll('#cutSeg button').forEach(b=>b.classList.toggle('active',b.dataset.dir===cutDir));
+document.getElementById('allowRotate').checked=e.rotate!==false;
+document.getElementById('costPrice').value=e.costPrice||''; document.getElementById('markup').value=e.markup||'';
+formatMoneyInput(document.getElementById('costPrice')); formatMoneyInput(document.getElementById('markup'));
+document.getElementById('piecesBody').innerHTML=''; rowCount=0;
+if(e.rows&&e.rows.length){ e.rows.forEach(r=>addRow(r.name||'',r.w||'',r.h||'',r.qty||'1',r.color||null)); } else { addRow(); addRow(); addRow(); }
+currentOrderId=e.id; currentOrderName=e.name; currentOrderTs=e.ts;
+updateUnitCost(); closeArchive(); calculate(); updateOrderBanner();
+window.scrollTo({top:document.getElementById('resultsContainer').offsetTop-20,behavior:'smooth'});
+showToast(`${e.name} — ${t('orderLoaded')}`);
+}
+function updateOrderBanner(){
+const b=document.getElementById('orderBanner');
+if(currentOrderId && currentOrderName){
+document.getElementById('orderBannerText').textContent=`${currentOrderName} — ${t('fromArchive')}`;
+document.getElementById('orderBannerDate').textContent=currentOrderTs?fmtDateTime(currentOrderTs):'';
+b.style.display='flex';
+} else { b.style.display='none'; }
+}
+
+/* ===== Saqlash / tiklash (joriy holat) ===== */
+function persist(){
+try{
+const state={ lang,unit,cutDir,activeMaterial, currentOrderId,currentOrderName,currentOrderTs,
+theme:document.documentElement.getAttribute('data-theme')||'light',
+sheetWidth:document.getElementById('sheetWidth').value, sheetHeight:document.getElementById('sheetHeight').value,
+kerf:document.getElementById('kerf').value, rotate:document.getElementById('allowRotate').checked,
+costPrice:document.getElementById('costPrice').value, markup:document.getElementById('markup').value, rows: collectRows() };
+localStorage.setItem(STORE_KEY,JSON.stringify(state));
+}catch(e){}
+}
+function restore(){
+let state=null; try{ state=JSON.parse(localStorage.getItem(STORE_KEY)||'null'); }catch(e){}
+if(!state) return false;
+lang=state.lang||'uz'; unit=state.unit||'cm'; cutDir=state.cutDir||'auto';
+if(typeof state.activeMaterial==='number') activeMaterial=state.activeMaterial;
+currentOrderId=state.currentOrderId||null; currentOrderName=state.currentOrderName||''; currentOrderTs=state.currentOrderTs||0;
+const theme=state.theme||'light'; document.documentElement.setAttribute('data-theme',theme);
+document.querySelectorAll('#unitSeg button').forEach(b=>b.classList.toggle('active',b.dataset.unit===unit));
+document.querySelectorAll('#langSeg button').forEach(b=>b.classList.toggle('active',b.dataset.lang===lang));
+document.querySelectorAll('#themeSeg button').forEach(b=>b.classList.toggle('active',b.dataset.theme===theme));
+document.querySelectorAll('#cutSeg button').forEach(b=>b.classList.toggle('active',b.dataset.dir===cutDir));
+if(state.sheetWidth) document.getElementById('sheetWidth').value=state.sheetWidth;
+if(state.sheetHeight) document.getElementById('sheetHeight').value=state.sheetHeight;
+if(state.kerf!==undefined) document.getElementById('kerf').value=state.kerf;
+document.getElementById('allowRotate').checked=state.rotate!==false;
+if(state.costPrice!==undefined) document.getElementById('costPrice').value=state.costPrice;
+if(state.markup!==undefined) document.getElementById('markup').value=state.markup;
+formatMoneyInput(document.getElementById('costPrice')); formatMoneyInput(document.getElementById('markup'));
+document.getElementById('piecesBody').innerHTML=''; rowCount=0;
+if(state.rows&&state.rows.length){ state.rows.forEach(r=>addRow(r.name||'',r.w||'',r.h||'',r.qty||'1',r.color||null)); } else { addRow(); addRow(); addRow(); }
+return true;
+}
+
+/* ===== MaxRects ===== */
+function packMaxRects(SW,SH,pieces,kerf,rotate,forceDir){ const heuristics=forceDir?['DIR']:['BAF','BSSF','BLSF','BL']; let best=null; for(const h of heuristics){ const r=runPacking(SW,SH,pieces,kerf,rotate,forceDir,h); if(!best||r.sheets.length<best.sheets.length||(r.sheets.length===best.sheets.length&&r.waste<best.waste)) best=r; } return best.sheets; }
 function runPacking(SW,SH,pieces,kerf,rotate,forceDir,heur){
-  const sheets=[];
-  let rem=pieces.map((p,i)=>({...p,uid:i}));
-  rem.sort((a,b)=>(b.w*b.h)-(a.w*a.h)||Math.max(b.w,b.h)-Math.max(a.w,a.h));
-  while(rem.length){
-    const sheet={free:[{x:0,y:0,w:SW,h:SH}],placements:[]};
-    let placed=true;
-    while(placed){
-      placed=false;
-      let b1=Infinity,b2=Infinity,bi=-1,bnode=null,brot=false;
-      for(let i=0;i<rem.length;i++){
-        const fit=findPos(sheet.free,rem[i],rotate,forceDir,heur);
-        if(fit&&(fit.s1<b1-1e-6||(Math.abs(fit.s1-b1)<1e-6&&fit.s2<b2))){ b1=fit.s1;b2=fit.s2;bi=i;bnode=fit.node;brot=fit.rot; }
-      }
-      if(bi===-1) break;
-      const p=rem[bi]; const pw=brot?p.h:p.w, ph=brot?p.w:p.h;
-      place(sheet,bnode.x,bnode.y,pw,ph,p,brot,kerf);
-      rem.splice(bi,1); placed=true;
-    }
-    sheets.push(sheet);
-    if(sheets.length>2000) break;
-  }
-  const waste=sheets.reduce((s,sh)=>{const u=sh.placements.reduce((a,p)=>a+p.w*p.h,0);return s+(SW*SH-u);},0);
-  return {sheets,waste};
+const sheets=[]; let rem=pieces.map((p,i)=>({...p,uid:i})); rem.sort((a,b)=>(b.w*b.h)-(a.w*a.h)||Math.max(b.w,b.h)-Math.max(a.w,a.h));
+while(rem.length){ const sheet={free:[{x:0,y:0,w:SW,h:SH}],placements:[]}; let placed=true;
+while(placed){ placed=false; let b1=Infinity,b2=Infinity,bi=-1,bnode=null,brot=false;
+for(let i=0;i<rem.length;i++){ const fit=findPos(sheet.free,rem[i],rotate,forceDir,heur); if(fit&&(fit.s1<b1-1e-6||(Math.abs(fit.s1-b1)<1e-6&&fit.s2<b2))){ b1=fit.s1;b2=fit.s2;bi=i;bnode=fit.node;brot=fit.rot; } }
+if(bi===-1) break; const p=rem[bi]; const pw=brot?p.h:p.w, ph=brot?p.w:p.h; place(sheet,bnode.x,bnode.y,pw,ph,p,brot,kerf); rem.splice(bi,1); placed=true; }
+sheets.push(sheet); if(sheets.length>2000) break; }
+const waste=sheets.reduce((s,sh)=>{const u=sh.placements.reduce((a,p)=>a+p.w*p.h,0);return s+(SW*SH-u);},0); return {sheets,waste};
 }
 function findPos(free,piece,rotate,forceDir,heur){
-  let best=null;
-  for(const rect of free){
-    const ors=[{w:piece.w,h:piece.h,rot:false}];
-    if(rotate&&piece.w!==piece.h) ors.push({w:piece.h,h:piece.w,rot:true});
-    for(const o of ors){
-      if(o.w<=rect.w+1e-6&&o.h<=rect.h+1e-6){
-        const lw=rect.w-o.w, lh=rect.h-o.h; let s1,s2;
-        if(heur==='BSSF'){s1=Math.min(lw,lh);s2=Math.max(lw,lh);}
-        else if(heur==='BLSF'){s1=Math.max(lw,lh);s2=Math.min(lw,lh);}
-        else if(heur==='BAF'){s1=rect.w*rect.h-o.w*o.h;s2=Math.min(lw,lh);}
-        else if(heur==='BL'){s1=rect.y+o.h;s2=rect.x;}
-        else { if(forceDir==='horizontal'){s1=rect.y*1e6+rect.x;s2=lh;} else {s1=rect.x*1e6+rect.y;s2=lw;} }
-        if(!best||s1<best.s1-1e-6||(Math.abs(s1-best.s1)<1e-6&&s2<best.s2)) best={node:rect,rot:o.rot,s1,s2};
-      }
-    }
-  }
-  return best;
+let best=null;
+for(const rect of free){ const ors=[{w:piece.w,h:piece.h,rot:false}]; if(rotate&&piece.w!==piece.h) ors.push({w:piece.h,h:piece.w,rot:true});
+for(const o of ors){ if(o.w<=rect.w+1e-6&&o.h<=rect.h+1e-6){ const lw=rect.w-o.w, lh=rect.h-o.h; let s1,s2;
+if(heur==='BSSF'){s1=Math.min(lw,lh);s2=Math.max(lw,lh);} else if(heur==='BLSF'){s1=Math.max(lw,lh);s2=Math.min(lw,lh);}
+else if(heur==='BAF'){s1=rect.w*rect.h-o.w*o.h;s2=Math.min(lw,lh);} else if(heur==='BL'){s1=rect.y+o.h;s2=rect.x;}
+else { if(forceDir==='horizontal'){s1=rect.y*1e6+rect.x;s2=lh;} else {s1=rect.x*1e6+rect.y;s2=lw;} }
+if(!best||s1<best.s1-1e-6||(Math.abs(s1-best.s1)<1e-6&&s2<best.s2)) best={node:rect,rot:o.rot,s1,s2}; } } }
+return best;
 }
 function place(sheet,x,y,w,h,piece,rot,kerf){
-  sheet.placements.push({x,y,w,h,piece,rot});
-  const uw=w+kerf, uh=h+kerf; const nf=[];
-  for(const r of sheet.free){
-    if(x>=r.x+r.w||x+uw<=r.x||y>=r.y+r.h||y+uh<=r.y){nf.push(r);continue;}
-    if(x>r.x) nf.push({x:r.x,y:r.y,w:x-r.x,h:r.h});
-    if(x+uw<r.x+r.w) nf.push({x:x+uw,y:r.y,w:r.x+r.w-(x+uw),h:r.h});
-    if(y>r.y) nf.push({x:r.x,y:r.y,w:r.w,h:y-r.y});
-    if(y+uh<r.y+r.h) nf.push({x:r.x,y:y+uh,w:r.w,h:r.y+r.h-(y+uh)});
-  }
-  sheet.free=prune(nf);
+sheet.placements.push({x,y,w,h,piece,rot}); const uw=w+kerf, uh=h+kerf; const nf=[];
+for(const r of sheet.free){ if(x>=r.x+r.w||x+uw<=r.x||y>=r.y+r.h||y+uh<=r.y){nf.push(r);continue;}
+if(x>r.x) nf.push({x:r.x,y:r.y,w:x-r.x,h:r.h}); if(x+uw<r.x+r.w) nf.push({x:x+uw,y:r.y,w:r.x+r.w-(x+uw),h:r.h});
+if(y>r.y) nf.push({x:r.x,y:r.y,w:r.w,h:y-r.y}); if(y+uh<r.y+r.h) nf.push({x:r.x,y:y+uh,w:r.w,h:r.y+r.h-(y+uh)}); }
+sheet.free=prune(nf);
 }
-function prune(rects){
-  let c=rects.filter(r=>r.w>0.5&&r.h>0.5); const out=[];
-  for(let i=0;i<c.length;i++){
-    let inside=false;
-    for(let j=0;j<c.length;j++){
-      if(i===j) continue; const a=c[i],b=c[j];
-      if(a.x>=b.x-1e-6&&a.y>=b.y-1e-6&&a.x+a.w<=b.x+b.w+1e-6&&a.y+a.h<=b.y+b.h+1e-6){
-        if(a.w*a.h<b.w*b.h||(a.w*a.h===b.w*b.h&&i>j)){inside=true;break;}
-      }
-    }
-    if(!inside) out.push(c[i]);
-  }
-  return out;
+function prune(rects){ let c=rects.filter(r=>r.w>0.5&&r.h>0.5); const out=[];
+for(let i=0;i<c.length;i++){ let inside=false; for(let j=0;j<c.length;j++){ if(i===j) continue; const a=c[i],b=c[j]; if(a.x>=b.x-1e-6&&a.y>=b.y-1e-6&&a.x+a.w<=b.x+b.w+1e-6&&a.y+a.h<=b.y+b.h+1e-6){ if(a.w*a.h<b.w*b.h||(a.w*a.h===b.w*b.h&&i>j)){inside=true;break;} } } if(!inside) out.push(c[i]); } return out;
 }
 function computeRemnants(SW,SH,placements){
-  const xsSet=new Set([0,SW]),ysSet=new Set([0,SH]);
-  placements.forEach(p=>{xsSet.add(p.x);xsSet.add(p.x+p.w);ysSet.add(p.y);ysSet.add(p.y+p.h);});
-  const xs=[...xsSet].sort((a,b)=>a-b), ys=[...ysSet].sort((a,b)=>a-b);
-  const cols=xs.length-1, rows=ys.length-1;
-  const occ=Array.from({length:rows},()=>new Array(cols).fill(false));
-  for(let r=0;r<rows;r++){ const cy=(ys[r]+ys[r+1])/2;
-    for(let c=0;c<cols;c++){ const cx=(xs[c]+xs[c+1])/2;
-      for(const p of placements){ if(cx>p.x&&cx<p.x+p.w&&cy>p.y&&cy<p.y+p.h){occ[r][c]=true;break;} } } }
-  const remnants=[]; const used=Array.from({length:rows},()=>new Array(cols).fill(false));
-  for(let r=0;r<rows;r++){ for(let c=0;c<cols;c++){
-    if(occ[r][c]||used[r][c]) continue;
-    let c2=c; while(c2+1<cols&&!occ[r][c2+1]&&!used[r][c2+1]) c2++;
-    let r2=r,ok=true;
-    while(ok&&r2+1<rows){ for(let cc=c;cc<=c2;cc++){if(occ[r2+1][cc]||used[r2+1][cc]){ok=false;break;}} if(ok) r2++; }
-    for(let rr=r;rr<=r2;rr++) for(let cc=c;cc<=c2;cc++) used[rr][cc]=true;
-    remnants.push({x:xs[c],y:ys[r],w:xs[c2+1]-xs[c],h:ys[r2+1]-ys[r]});
-  } }
-  return remnants.filter(r=>r.w>6&&r.h>6); // mm da: 6mm dan katta qoldiqlar
+const xsSet=new Set([0,SW]),ysSet=new Set([0,SH]); placements.forEach(p=>{xsSet.add(p.x);xsSet.add(p.x+p.w);ysSet.add(p.y);ysSet.add(p.y+p.h);});
+const xs=[...xsSet].sort((a,b)=>a-b), ys=[...ysSet].sort((a,b)=>a-b); const cols=xs.length-1, rows=ys.length-1;
+const occ=Array.from({length:rows},()=>new Array(cols).fill(false));
+for(let r=0;r<rows;r++){ const cy=(ys[r]+ys[r+1])/2; for(let c=0;c<cols;c++){ const cx=(xs[c]+xs[c+1])/2; for(const p of placements){ if(cx>p.x&&cx<p.x+p.w&&cy>p.y&&cy<p.y+p.h){occ[r][c]=true;break;} } } }
+const remnants=[]; const used=Array.from({length:rows},()=>new Array(cols).fill(false));
+for(let r=0;r<rows;r++){ for(let c=0;c<cols;c++){ if(occ[r][c]||used[r][c]) continue; let c2=c; while(c2+1<cols&&!occ[r][c2+1]&&!used[r][c2+1]) c2++; let r2=r,ok=true; while(ok&&r2+1<rows){ for(let cc=c;cc<=c2;cc++){if(occ[r2+1][cc]||used[r2+1][cc]){ok=false;break;}} if(ok) r2++; } for(let rr=r;rr<=r2;rr++) for(let cc=c;cc<=c2;cc++) used[rr][cc]=true; remnants.push({x:xs[c],y:ys[r],w:xs[c2+1]-xs[c],h:ys[r2+1]-ys[r]}); } }
+return remnants.filter(r=>r.w>6&&r.h>6);
 }
 
 function calculate(){
-  const f=UNIT_TO_MM[unit];
-  const SWu=parseFloat(document.getElementById('sheetWidth').value);
-  const SHu=parseFloat(document.getElementById('sheetHeight').value);
-  const kerfMm=parseFloat(document.getElementById('kerf').value)||0; // ALWAYS mm
-  const rotate=document.getElementById('allowRotate').checked;
-  if(!SWu||!SHu||SWu<=0||SHu<=0){ showError(t('errSheet')); return; }
-  // mm ga o'tkazamiz
-  const SW=SWu*f, SH=SHu*f;
-  const pieces=getPiecesMm();
-  if(!pieces.length){ showError(t('errPiece')); return; }
-  for(const p of pieces){
-    const fits=(p.w<=SW&&p.h<=SH)||(rotate&&p.h<=SW&&p.w<=SH);
-    if(!fits){ showError(`"${p.name}" (${fmtU(p.w)}×${fmtU(p.h)}) ${t('errTooBig')}`); return; }
-  }
-  document.getElementById('errorMsg').classList.remove('show');
-  const forceDir=cutDir==='auto'?null:cutDir;
-  const sheets=packMaxRects(SW,SH,pieces,kerfMm,rotate,forceDir); // kerf aniq mm
-  lastResult={sheets,SW,SH,pieces,kerfMm};
-  renderResults(lastResult);
+const f=UNIT_TO_MM[unit]; const SWu=parseFloat(document.getElementById('sheetWidth').value); const SHu=parseFloat(document.getElementById('sheetHeight').value);
+const kerfMm=parseFloat(document.getElementById('kerf').value)||0; const rotate=document.getElementById('allowRotate').checked;
+if(!SWu||!SHu||SWu<=0||SHu<=0){ showError(t('errSheet')); return; }
+const SW=SWu*f, SH=SHu*f; const pieces=getPiecesMm(); if(!pieces.length){ showError(t('errPiece')); return; }
+for(const p of pieces){ const fits=(p.w<=SW&&p.h<=SH)||(rotate&&p.h<=SW&&p.w<=SH); if(!fits){ showError(`"${p.name}" (${fmtU(p.w)}×${fmtU(p.h)}) ${t('errTooBig')}`); return; } }
+document.getElementById('errorMsg').classList.remove('show');
+const forceDir=cutDir==='auto'?null:cutDir; const sheets=packMaxRects(SW,SH,pieces,kerfMm,rotate,forceDir);
+lastResult={sheets,SW,SH,pieces,kerfMm}; renderResults(lastResult); persist();
+}
+
+function renderFinancials(res){
+const {SW,SH,pieces,sheets}=res; const el=document.getElementById('finReport');
+const costPrice=parseMoneyEl(document.getElementById('costPrice')), markup=parseMoneyEl(document.getElementById('markup'));
+if(costPrice<=0 && markup<=0){ el.style.display='none'; el.innerHTML=''; return; }
+const N=sheets.length, sheetAreaM2=(SW*SH)/1e6, usedAreaM2=pieces.reduce((s,p)=>s+p.w*p.h,0)/1e6;
+const wasteAreaM2=Math.max(0,sheetAreaM2*N-usedAreaM2); const costPerM2= sheetAreaM2>0 ? costPrice/sheetAreaM2 : 0;
+const totalCost=costPrice*N, usedValueCost=usedAreaM2*costPerM2, wasteValueCost=wasteAreaM2*costPerM2, profit=usedAreaM2*markup, grandTotal=usedValueCost+profit;
+let rows='';
+if(costPrice>0){
+rows+=`<div class="fin-row total"><span class="lbl">${t('finTotalCost')}<small>${N} ${t('finSubSheets')} × ${fmtMoney(costPrice)}</small></span><span class="val">${fmtMoney(totalCost)}</span></div>`;
+rows+=`<div class="fin-row"><span class="lbl">${t('finUnitCost')}</span><span class="val">${fmtMoney(costPerM2)} / m²</span></div>`;
+rows+=`<div class="fin-row"><span class="lbl">${t('finUsedValue')}<small>${fmtM2(usedAreaM2)}</small></span><span class="val">${fmtMoney(usedValueCost)}</span></div>`;
+rows+=`<div class="fin-row waste"><span class="lbl">${t('finWasteValue')}<small>${fmtM2(wasteAreaM2)}</small></span><span class="val">${fmtMoney(wasteValueCost)}</span></div>`;
+}
+if(markup>0){
+rows+=`<div class="fin-row"><span class="lbl">${t('finMarkup')}</span><span class="val">${fmtMoney(markup)} / m²</span></div>`;
+rows+=`<div class="fin-row profit"><span class="lbl">${t('finProfit')}<small>${fmtM2(usedAreaM2)} × ${fmtMoney(markup)}</small></span><span class="val">${fmtMoney(profit)}</span></div>`;
+}
+if(costPrice>0 && markup>0){ rows+=`<div class="fin-row grand"><span class="lbl">${t('finGrand')}</span><span class="val">${fmtMoney(grandTotal)}</span></div>`; }
+const groups=new Map(); pieces.forEach(p=>{ const key=Math.round(p.w)+'_'+Math.round(p.h); if(!groups.has(key)) groups.set(key,{w:p.w,h:p.h,count:0}); groups.get(key).count++; });
+const arr=[...groups.values()].sort((a,b)=>(b.w*b.h)-(a.w*a.h)); const showCost=costPrice>0, showProfit=markup>0;
+let headCols=`<th>${t('thSize')}</th><th>${t('thCount')}</th><th>${t('thArea')}</th>`; if(showCost) headCols+=`<th>${t('thCost')}</th>`; if(showProfit) headCols+=`<th>${t('thProfit')}</th>`; headCols+=`<th>${t('thTotal')}</th>`;
+const ul=UNIT_LABEL[lang][unit]; let trs=''; let sc=0,sa=0,scc=0,sp=0,st=0;
+arr.forEach(g=>{ const aM2=g.count*g.w*g.h/1e6, c=aM2*costPerM2, pr=aM2*markup, tot=c+pr; sc+=g.count; sa+=aM2; scc+=c; sp+=pr; st+=tot;
+let tds=`<td>${fmtU(g.w)}×${fmtU(g.h)} ${ul}</td><td>${g.count}</td><td>${fmtM2(aM2)}</td>`; if(showCost) tds+=`<td>${fmtMoney(c)}</td>`; if(showProfit) tds+=`<td>${fmtMoney(pr)}</td>`; tds+=`<td>${fmtMoney(tot)}</td>`; trs+=`<tr>${tds}</tr>`; });
+let totTds=`<td>${t('total')}</td><td>${sc}</td><td>${fmtM2(sa)}</td>`; if(showCost) totTds+=`<td>${fmtMoney(scc)}</td>`; if(showProfit) totTds+=`<td>${fmtMoney(sp)}</td>`; totTds+=`<td>${fmtMoney(st)}</td>`;
+el.innerHTML=`<div class="fin-head"><span class="fin-title">${t('finReport')}</span><span class="fin-sub">${fmtM2(sheetAreaM2)}/${t('sheet').toLowerCase()} · ${N} ${t('finSubSheets')}</span></div><div class="fin-rows">${rows}</div><div class="fin-subtitle">${t('bySize')}</div><div class="fin-table-wrap"><table class="fin-table"><thead><tr>${headCols}</tr></thead><tbody>${trs}<tr class="tot">${totTds}</tr></tbody></table></div>`;
+el.style.display='block';
 }
 
 function renderResults(res){
-  const {sheets,SW,SH,pieces,kerfMm}=res; // hammasi mm
-  document.getElementById('emptyState').style.display='none';
-  document.getElementById('resultsContainer').style.display='block';
-  const ul=UNIT_LABEL[lang][unit];
-  const dirLabel=cutDir==='auto'?t('dirAuto'):(cutDir==='horizontal'?t('dirHor'):t('dirVer'));
-  document.getElementById('printMeta').textContent =
-    new Date().toLocaleDateString(lang==='ru'?'ru-RU':'uz-UZ') +
-    ` | ${t('sheet')}: ${fmtU(SW)}×${fmtU(SH)} ${ul} | ${t('cut')}: ${dirLabel} | ${t('kerfLabel')}: ${fmtNum(kerfMm)} mm`;
-
-  const totArea=SW*SH*sheets.length;
-  const usedArea=pieces.reduce((s,p)=>s+p.w*p.h,0);
-  const wastePct=((totArea-usedArea)/totArea*100).toFixed(1);
-  const effPct=(usedArea/totArea*100).toFixed(1);
-
-  document.getElementById('statsBar').innerHTML=`
-    <div class="stat-card highlight"><div class="stat-value">${sheets.length}</div><div class="stat-label">${t('stTotalSheets')}</div></div>
-    <div class="stat-card"><div class="stat-value">${pieces.length}</div><div class="stat-label">${t('stTotalPieces')}</div></div>
-    <div class="stat-card efficiency"><div class="stat-value">${effPct}%</div><div class="stat-label">${t('stEff')}</div></div>
-    <div class="stat-card waste"><div class="stat-value">${wastePct}%</div><div class="stat-label">${t('stWaste')}</div></div>`;
-
-  const grid=document.getElementById('sheetsGrid'); grid.innerHTML='';
-  const isDark=document.documentElement.getAttribute('data-theme')==='dark';
-  const sheetBg=isDark?'oklch(26% 0.014 260)':'oklch(94% 0.008 75)';
-  const sheetStroke=isDark?'oklch(45% 0.02 260)':'oklch(60% 0.02 75)';
-  const gridLine=isDark?'oklch(34% 0.015 260)':'oklch(85% 0.01 75)';
-  const remnantFill=isDark?'oklch(32% 0.015 260)':'oklch(90% 0.012 75)';
-  const remnantStroke=isDark?'oklch(48% 0.02 260)':'oklch(72% 0.02 75)';
-  const remnantText=isDark?'oklch(72% 0.015 260)':'oklch(48% 0.02 75)';
-  const pieceText=isDark?'#f2f2f2':'#1a1a1a';
-  const pieceSub=isDark?'#d0d0d0':'#333';
-
-  sheets.forEach((sheet,idx)=>{
-    const used=sheet.placements.reduce((s,p)=>s+p.w*p.h,0);
-    const sEff=(used/(SW*SH)*100).toFixed(1);
-    const sWaste=((SW*SH-used)/(SW*SH)*100).toFixed(1);
-    const remnants=computeRemnants(SW,SH,sheet.placements);
-    const CW=820,CH=(SH/SW)*CW,sx=CW/SW,sy=CH/SH;
-    let svg=`<svg class="sheet-canvas" viewBox="0 0 ${CW} ${CH}" xmlns="http://www.w3.org/2000/svg">`;
-    svg+=`<rect x="0" y="0" width="${CW}" height="${CH}" fill="${sheetBg}" stroke="${sheetStroke}" stroke-width="2"/>`;
-    remnants.forEach(r=>{
-      const rx=r.x*sx,ry=r.y*sy,rw=r.w*sx,rh=r.h*sy;
-      svg+=`<rect x="${rx}" y="${ry}" width="${rw}" height="${rh}" fill="${remnantFill}" stroke="${remnantStroke}" stroke-width="1" stroke-dasharray="5,4"/>`;
-      const fs=Math.min(rw/6,rh/2.2,15);
-      if(fs>6){ const label=`${fmtU(r.w)}×${fmtU(r.h)}`;
-        if(rw<rh*0.5&&rh>40) svg+=`<text x="${rx+rw/2}" y="${ry+rh/2}" text-anchor="middle" font-size="${fs}" fill="${remnantText}" font-weight="600" transform="rotate(-90 ${rx+rw/2} ${ry+rh/2})">${label} ${ul}</text>`;
-        else svg+=`<text x="${rx+rw/2}" y="${ry+rh/2+fs*0.35}" text-anchor="middle" font-size="${fs}" fill="${remnantText}" font-weight="600">${label} ${ul}</text>`;
-      }
-    });
-    // to'r chiziqlari: har 100mm (yoki mm birligida 10mm)
-    const stepMm = unit==='mm' ? 50 : 100;
-    for(let gx=stepMm;gx<SW;gx+=stepMm) svg+=`<line x1="${gx*sx}" y1="0" x2="${gx*sx}" y2="${CH}" stroke="${gridLine}" stroke-width="0.5" stroke-dasharray="3,4"/>`;
-    for(let gy=stepMm;gy<SH;gy+=stepMm) svg+=`<line x1="0" y1="${gy*sy}" x2="${CW}" y2="${gy*sy}" stroke="${gridLine}" stroke-width="0.5" stroke-dasharray="3,4"/>`;
-    sheet.placements.forEach(p=>{
-      const rx=p.x*sx,ry=p.y*sy,rw=p.w*sx,rh=p.h*sy;
-      svg+=`<rect x="${rx+1}" y="${ry+1}" width="${rw-2}" height="${rh-2}" fill="${p.piece.color}" fill-opacity="0.82" stroke="${p.piece.color}" stroke-width="1.5" rx="2"/>`;
-      const fs=Math.min(rw/7,rh/3,15);
-      if(fs>6){
-        svg+=`<text x="${rx+rw/2}" y="${ry+rh/2-fs*0.25}" text-anchor="middle" font-size="${fs}" font-weight="700" fill="${pieceText}">${p.piece.name}</text>`;
-        svg+=`<text x="${rx+rw/2}" y="${ry+rh/2+fs*0.9}" text-anchor="middle" font-size="${fs*0.82}" fill="${pieceSub}">${fmtU(p.w)}×${fmtU(p.h)}${p.rot?' ↻':''}</text>`;
-      }
-    });
-    svg+=`</svg>`;
-    const uniq=[]; const seen=new Set();
-    sheet.placements.forEach(p=>{ if(!seen.has(p.piece.name)){seen.add(p.piece.name);uniq.push(p.piece);} });
-    let legend=uniq.map(p=>`<span class="legend-item"><span class="legend-color" style="background:${p.color}"></span>${p.name}</span>`).join('');
-    if(remnants.length) legend+=`<span class="legend-item"><span class="legend-color legend-remnant"></span>${t('remnant')}</span>`;
-    const div=document.createElement('div');
-    div.className='sheet-visual';
-    div.innerHTML=`
-      <div class="sheet-header">
-        <span class="sheet-number">${t('sheet')} #${idx+1} (${fmtU(SW)}×${fmtU(SH)} ${ul})</span>
-        <span class="sheet-waste">${t('pcs')}: ${sheet.placements.length} · ${t('eff')}: ${sEff}% · ${t('waste')}: ${sWaste}%</span>
-      </div>
-      <div class="sheet-canvas-wrap">${svg}</div>
-      <div class="legend">${legend}</div>`;
-    grid.appendChild(div);
-  });
+const {sheets,SW,SH,pieces,kerfMm}=res;
+document.getElementById('emptyState').style.display='none'; document.getElementById('resultsContainer').style.display='block';
+const ul=UNIT_LABEL[lang][unit]; const dirLabel=cutDir==='auto'?t('dirAuto'):(cutDir==='horizontal'?t('dirHor'):t('dirVer'));
+let meta=new Date().toLocaleDateString(lang==='ru'?'ru-RU':'uz-UZ') + ` | ${t('sheet')}: ${fmtU(SW)}×${fmtU(SH)} ${ul} | ${t('cut')}: ${dirLabel} | ${t('kerfLabel')}: ${fmtNum(kerfMm)} mm`;
+document.getElementById('printMeta').textContent=meta;
+document.getElementById('printTitle').textContent = currentOrderName ? `Aqlli kesuvchi — ${currentOrderName}` : 'Aqlli kesuvchi — Kesish andozasi';
+const totArea=SW*SH*sheets.length, usedArea=pieces.reduce((s,p)=>s+p.w*p.h,0);
+const wastePct=((totArea-usedArea)/totArea*100).toFixed(1), effPct=(usedArea/totArea*100).toFixed(1);
+document.getElementById('statsBar').innerHTML=`
+<div class="stat-card highlight"><div class="stat-value">${sheets.length}</div><div class="stat-label">${t('stTotalSheets')}</div></div>
+<div class="stat-card"><div class="stat-value">${pieces.length}</div><div class="stat-label">${t('stTotalPieces')}</div></div>
+<div class="stat-card efficiency"><div class="stat-value">${effPct}%</div><div class="stat-label">${t('stEff')}</div></div>
+<div class="stat-card waste"><div class="stat-value">${wastePct}%</div><div class="stat-label">${t('stWaste')}</div></div>`;
+renderFinancials(res);
+const grid=document.getElementById('sheetsGrid'); grid.innerHTML='';
+const isDark=document.documentElement.getAttribute('data-theme')==='dark';
+const sheetBg=isDark?'oklch(26% 0.014 260)':'oklch(94% 0.008 75)', sheetStroke=isDark?'oklch(45% 0.02 260)':'oklch(60% 0.02 75)', gridLine=isDark?'oklch(34% 0.015 260)':'oklch(85% 0.01 75)';
+const remnantFill=isDark?'oklch(32% 0.015 260)':'oklch(90% 0.012 75)', remnantStroke=isDark?'oklch(48% 0.02 260)':'oklch(72% 0.02 75)', remnantText=isDark?'oklch(72% 0.015 260)':'oklch(48% 0.02 75)';
+const pieceText=isDark?'#f2f2f2':'#1a1a1a', pieceSub=isDark?'#d0d0d0':'#333';
+sheets.forEach((sheet,idx)=>{
+const used=sheet.placements.reduce((s,p)=>s+p.w*p.h,0); const sEff=(used/(SW*SH)*100).toFixed(1), sWaste=((SW*SH-used)/(SW*SH)*100).toFixed(1);
+const remnants=computeRemnants(SW,SH,sheet.placements); const CW=820,CH=(SH/SW)*CW,sx=CW/SW,sy=CH/SH;
+let svg=`<svg class="sheet-canvas" viewBox="0 0 ${CW} ${CH}" xmlns="http://www.w3.org/2000/svg">`;
+svg+=`<rect x="0" y="0" width="${CW}" height="${CH}" fill="${sheetBg}" stroke="${sheetStroke}" stroke-width="2"/>`;
+remnants.forEach(r=>{ const rx=r.x*sx,ry=r.y*sy,rw=r.w*sx,rh=r.h*sy; svg+=`<rect x="${rx}" y="${ry}" width="${rw}" height="${rh}" fill="${remnantFill}" stroke="${remnantStroke}" stroke-width="1" stroke-dasharray="5,4"/>`;
+const fs=Math.min(rw/6,rh/2.2,15); if(fs>6){ const label=`${fmtU(r.w)}×${fmtU(r.h)}`; if(rw<rh*0.5&&rh>40) svg+=`<text x="${rx+rw/2}" y="${ry+rh/2}" text-anchor="middle" font-size="${fs}" fill="${remnantText}" font-weight="600" transform="rotate(-90 ${rx+rw/2} ${ry+rh/2})">${label} ${ul}</text>`; else svg+=`<text x="${rx+rw/2}" y="${ry+rh/2+fs*0.35}" text-anchor="middle" font-size="${fs}" fill="${remnantText}" font-weight="600">${label} ${ul}</text>`; } });
+const stepMm = unit==='mm' ? 50 : 100;
+for(let gx=stepMm;gx<SW;gx+=stepMm) svg+=`<line x1="${gx*sx}" y1="0" x2="${gx*sx}" y2="${CH}" stroke="${gridLine}" stroke-width="0.5" stroke-dasharray="3,4"/>`;
+for(let gy=stepMm;gy<SH;gy+=stepMm) svg+=`<line x1="0" y1="${gy*sy}" x2="${CW}" y2="${gy*sy}" stroke="${gridLine}" stroke-width="0.5" stroke-dasharray="3,4"/>`;
+sheet.placements.forEach(p=>{ const rx=p.x*sx,ry=p.y*sy,rw=p.w*sx,rh=p.h*sy; svg+=`<rect x="${rx+1}" y="${ry+1}" width="${rw-2}" height="${rh-2}" fill="${p.piece.color}" fill-opacity="0.82" stroke="${p.piece.color}" stroke-width="1.5" rx="2"/>`;
+const fs=Math.min(rw/7,rh/3,15); if(fs>6){ svg+=`<text x="${rx+rw/2}" y="${ry+rh/2-fs*0.25}" text-anchor="middle" font-size="${fs}" font-weight="700" fill="${pieceText}">${escapeHtml(p.piece.name)}</text>`; svg+=`<text x="${rx+rw/2}" y="${ry+rh/2+fs*0.9}" text-anchor="middle" font-size="${fs*0.82}" fill="${pieceSub}">${fmtU(p.w)}×${fmtU(p.h)}${p.rot?' ↻':''}</text>`; } });
+svg+=`</svg>`;
+const uniq=[]; const seen=new Set(); sheet.placements.forEach(p=>{ if(!seen.has(p.piece.name)){seen.add(p.piece.name);uniq.push(p.piece);} });
+let legend=uniq.map(p=>`<span class="legend-item"><span class="legend-color" style="background:${p.color}"></span>${escapeHtml(p.name)}</span>`).join('');
+if(remnants.length) legend+=`<span class="legend-item"><span class="legend-color legend-remnant"></span>${t('remnant')}</span>`;
+const div=document.createElement('div'); div.className='sheet-visual';
+div.innerHTML=`<div class="sheet-header"><span class="sheet-number">${t('sheet')} #${idx+1} (${fmtU(SW)}×${fmtU(SH)} ${ul})</span><span class="sheet-waste">${t('pcs')}: ${sheet.placements.length} · ${t('eff')}: ${sEff}% · ${t('waste')}: ${sWaste}%</span></div><div class="sheet-canvas-wrap">${svg}</div><div class="legend">${legend}</div>`;
+grid.appendChild(div);
+});
 }
 
 function fmtNum(n){ const r=Math.round(n*100)/100; return (Math.abs(r-Math.round(r))<1e-4?Math.round(r):parseFloat(r.toFixed(2))).toString().replace('.',','); }
-
 function savePDF(){ alert(I18N[lang].pdfHint); window.print(); }
 
-addRow(); addRow(); addRow();
-applyLang();
+/* ===== PWA ===== */
+let deferredPrompt=null;
+window.addEventListener('beforeinstallprompt',(e)=>{ e.preventDefault(); deferredPrompt=e; document.getElementById('installBtn').style.display='inline-flex'; });
+window.addEventListener('appinstalled',()=>{ deferredPrompt=null; document.getElementById('installBtn').style.display='none'; });
+async function installApp(){ if(!deferredPrompt) return; deferredPrompt.prompt(); await deferredPrompt.userChoice; deferredPrompt=null; document.getElementById('installBtn').style.display='none'; }
+(function injectManifest(){ try{
+const icon="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect width='512' height='512' rx='112' fill='%233f6fd0'/%3E%3Cg transform='translate(256 240)' fill='%23f2f6ff'%3E%3Ccircle r='108'/%3E%3C/g%3E%3Cg transform='translate(256 240)' fill='%233f6fd0'%3E%3Ccircle r='76'/%3E%3C/g%3E%3Cg transform='translate(256 240)' fill='%23f2f6ff'%3E%3Ccircle r='19'/%3E%3C/g%3E%3C/svg%3E";
+const manifest={ name:"Aqlli kesuvchi",short_name:"Kesuvchi",description:"DSP, laminat, profil va oyna uchun kesish optimizatori",start_url:".",scope:".",display:"standalone",orientation:"any",background_color:"#f6f4ef",theme_color:"#3f6fd0",lang:"uz",icons:[{src:icon,sizes:"192x192",type:"image/svg+xml",purpose:"any"},{src:icon,sizes:"512x512",type:"image/svg+xml",purpose:"any maskable"}] };
+const blob=new Blob([JSON.stringify(manifest)],{type:'application/manifest+json'}); const link=document.createElement('link'); link.rel='manifest'; link.href=URL.createObjectURL(blob); document.head.appendChild(link);
+}catch(e){} })();
+(function registerSW(){ if(!('serviceWorker' in navigator)) return; if(location.protocol==='file:') return; try{
+const swCode=["const CACHE='aqlli-kesuvchi-v1';","self.addEventListener('install',e=>{self.skipWaiting();});","self.addEventListener('activate',e=>{e.waitUntil(self.clients.claim());});","self.addEventListener('fetch',e=>{"," if(e.request.method!=='GET') return;"," e.respondWith(","  caches.match(e.request).then(r=>r||fetch(e.request).then(resp=>{","   const copy=resp.clone();","   caches.open(CACHE).then(c=>c.put(e.request,copy)).catch(()=>{});","   return resp;","  }).catch(()=>caches.match('./')))"," );","});"].join("\n");
+const blob=new Blob([swCode],{type:'text/javascript'}); const url=URL.createObjectURL(blob); navigator.serviceWorker.register(url).catch(()=>{});
+}catch(e){} })();
+
+['materialModal','orderModal','archiveModal'].forEach(id=>{ document.getElementById(id).addEventListener('click',function(e){ if(e.target===this) this.classList.remove('open'); }); });
+document.addEventListener('keydown',function(e){ if(e.key==='Escape'){ closeMaterialModal(); closeSaveOrder(); closeArchive(); closeMaterialMenu(); } });
+document.addEventListener('click',function(e){ const dd=document.querySelector('.material-dropdown'); if(dd && !dd.contains(e.target)) closeMaterialMenu(); });
+
+// Ishga tushirish
+loadMaterials(); loadArchive();
+if(!restore()){ addRow(); addRow(); addRow(); }
+applyLang(); renderMaterialList(); updateMaterialCurrent(); updateArchiveBadge(); updateOrderBanner();
+const costEl=document.getElementById('costPrice'), markupEl=document.getElementById('markup');
+costEl.addEventListener('input',()=>{ formatMoneyInput(costEl); updateUnitCost(); if(lastResult) renderFinancials(lastResult); persist(); });
+markupEl.addEventListener('input',()=>{ formatMoneyInput(markupEl); if(lastResult) renderFinancials(lastResult); persist(); });
+document.getElementById('sheetWidth').addEventListener('input',updateUnitCost);
+document.getElementById('sheetHeight').addEventListener('input',updateUnitCost);
+updateUnitCost();
+window.addEventListener('beforeunload', persist);
 </script>
 </body>
 </html>
